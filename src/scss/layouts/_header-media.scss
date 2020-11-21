@@ -1,0 +1,79 @@
+/* Media Header
+* ======================================= */
+@media screen and (max-width: 991px){
+    .header__topbar,
+    .nav__menu {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .dropdown-menu__item::before {
+        top: 12px;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 540px) {
+    .sidenav {
+        top: 50px;
+        height: calc(100% - 50px);
+    }
+
+    .offcanvas-phones {
+        top: 50px;
+    }
+
+    .mobile-header {
+        height: 50px;
+        padding: 0 15px; 
+
+    }
+
+    .mobile-logo {
+        max-width: 96px;
+    }
+
+    .hamburger {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        width: 30px;
+        height: 30px;
+        background-size: 100%;
+    }
+
+    .phone-dropdown {
+        padding: 14px 12px;
+
+        img {
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    .mobile-header .site-lang__item {
+        font-size: 12px;
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 375px) {
+    .phone-dropdown__button::after {
+        display: none;
+    }
+
+    .phone-dropdown__button {
+        padding-right: 0px;
+    }
+
+    .phone-dropdown {
+        padding: 14px 18px 14px 16px;
+    }
+}
+

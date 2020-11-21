@@ -1,0 +1,87 @@
+.body-preloader {
+	overflow: hidden;
+	padding-right: 17px !important;
+}
+
+.body-preloader .header {
+	position: absolute;
+}
+
+.preloader {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.pre-logo {
+	width: 200px;
+	height: 100px;
+	background:url('../images/theme/yenisey-logo-white-320w.png') no-repeat 50% 50% / contain ;
+}
+
+.pre-loading {
+	width: 64px;
+	height: 64px;
+	background:url('../icons/loading.svg') no-repeat 50% 50% / contain ;
+}
+
+.preloader * {
+	transition: all 600ms ease-in;
+} 
+
+.preloader::before,
+.preloader::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #13193b; 
+	background: -webkit-gradient(linear, left top, right top, from(rgba(19,25,59,1)), to(rgba(19,38,80,1)));
+    background: -o-linear-gradient(left, rgba(19,25,59,1) 0%, rgba(19,38,80,1) 100%);
+	background: linear-gradient(90deg, rgba(19,25,59,1) 0%, rgba(19,38,80,1) 100%);
+	transition: transform 1s ease-in-out;
+	transition-delay: 400ms;
+	z-index: -1;
+}
+
+.preloader::after {
+	top: 0;
+	transform: translateY(-45%);
+	/* background: coral; */
+}
+
+.preloader::before {
+	bottom: 0;
+	transform: translateY(45%);
+	/* background: blue; */
+}
+
+.preloader._loaded * {
+	visibility: hidden;
+	opacity: 0
+}
+.preloader._loaded::after {
+	transform: translateY(-100%);
+}
+
+.preloader._loaded::before {
+	transform: translateY(100%);
+}
+
+@media (max-width: 1200px){
+	.body-preloader {
+		overflow: hidden;
+		padding-right: 0px !important;
+	}
+}

@@ -1,0 +1,110 @@
+@media screen and (max-width: 1200px){
+    .partnership-header {
+        min-height: 305px;
+    }
+    .page-header_partnership {
+        background-size: contain;
+    }
+    .side-info__desc_right {
+        padding-right: 0;
+    }
+    .partnership-page__section {
+        margin-bottom: 80px;
+    }
+    .side-info__desc_left {
+        padding-left: 0;
+    }
+    .director__row {
+        padding: 0;
+    }
+    .director__image-block {
+        max-width: 56%;
+        flex: 0 0 56%;
+    }
+
+    .partnership-content {
+        // margin-top: -88px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .page-header_partnership {
+        background-size: 1200px;
+    }
+    .side-info__image-area {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 40px;
+    }
+    .side-info__desc_right {
+        padding-left: 0;
+    }
+    .side-info__desc-icon::after {
+        width: 100%;
+    }
+    .side-info__desc-icon {
+        // padding-left: 0;
+        // text-align: center;
+    }
+
+    .director__image-block {
+        max-width: 100%;
+        flex: 0 0 auto;
+        margin: 0 auto 40px;
+    }
+
+    .side-info__desc-icon {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .partnership-content__title-text {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .side-info__desc-header {
+        text-align: center;
+        max-width: 76%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .side-info__desc-header {
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .page-header_partnership {
+        background-size: 1000px;
+    }
+    .partnership-header {
+        min-height: 260px;
+    }
+    .partnership-content__title-text {
+        font-size: 3rem;
+    }
+    .director__bio {
+        margin-bottom: 80px;
+    }
+    .partnership-mainBlock__title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .partnership-header {
+        background-position-x: 65%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .side-info__desc-icon img {
+        width: 50px;
+        height: 50px;
+    }
+}
+

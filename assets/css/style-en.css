@@ -1,0 +1,10 @@
+/* #Styles for en version
+   ============================================================== */
+
+.hero__title {
+   font-size: 3.6rem;
+}
+
+.hero__title span::before {
+   display: none;
+}

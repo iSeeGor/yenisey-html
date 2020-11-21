@@ -1,0 +1,187 @@
+.y-review {
+
+	&__page-title {
+		margin-left: 172px;
+		margin-bottom: 40px;
+	}
+
+	&__pagination {
+		margin-bottom: 100px;
+	}
+}
+
+.r-card {
+	padding: 75px 0 40px;
+	margin-bottom: 60px;
+	display: flex;
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 85%;
+		height: 100%;
+		border: 1px solid #C1E2FB;
+		z-index: -1;
+	}
+
+	&__media {
+		position: relative;
+		z-index: 12;
+		flex: 0 0 355px;
+		max-width: 355px;
+		height: 250px;
+		background-color: #d9d9d9;
+		background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			position: relative;
+			z-index: 12;
+		}
+	}
+
+	&__content {
+		margin: 0 50px;
+		width: 100%;
+	}
+
+	&__head {
+		margin-bottom: 20px;
+	}
+
+	&__u-name {
+		color: #174782;
+		font-size: 1.8rem;
+		font-weight: $semiBold;
+		letter-spacing: 0.04em;
+		margin-bottom: 4px;
+	}
+	
+	&__meta {
+		display: flex;
+		justify-content: space-between;
+		color: #777777;
+	}
+
+	&__message {
+
+	}
+
+	&__message-inner {
+		font-size: 1.4rem;
+		position: relative;
+		overflow: hidden;
+		transition: height 0.3s ease-in-out;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			height: 40%;
+			width: 100%;
+			background: linear-gradient(to top, #fff 50%, transparent 100%);
+			transition: background 0.3s ease-in-out;
+		}
+
+		&._show::before {
+			background: transparent;
+		}
+	}
+
+	&__button {
+		padding: 4px 10px; 
+		line-height: inherit;
+		height: auto;
+		font-size: 12px;
+		margin-left: auto;
+		max-width: 160px;
+		width: 100%;
+		display: block;
+
+	}
+
+	&__video {
+		position: relative;
+		padding-top: 56%;
+		width: 100%;
+
+		iframe {
+			width: 100% !important;
+			height: 100% !important;
+			position: absolute;
+			top: 0;
+		}
+	}
+
+
+}
+
+.y-contacts {
+	margin-bottom: 100px;
+
+	.phones__select-list {
+		&:hover {
+			background: transparent;
+		}
+	}
+
+	.contactMap__contacts .link:hover {
+		color: $colorSecondary !important;
+	} 
+}
+
+.y-contacts__page-title {
+	margin-bottom: 40px;
+}
+
+@media (max-width: 1119.98px) {
+	.y-review__page-title {
+		margin-left: 140px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.y-review__page-title {
+		margin-left: 104px;
+	}
+
+	.r-card__media {
+		flex: 0 0 250px;
+		max-width: 245px;
+		height: 180px;
+	}
+}
+
+@media (max-width: 767.98px) {
+
+	.r-card {
+		padding: 0;
+		flex-direction: column;
+
+		&::before {
+			content: '';
+			bottom: 0;
+			top: auto;
+			width: 100%;
+			height: 70%;
+		}
+
+		&__media {
+			margin: 0 auto;
+			flex: 0 0 200px;
+			max-width: 250px;
+			margin-bottom: 40px;
+		} 
+
+		&__content {
+			margin: 0;
+			padding: 0 25px 25px 25px;
+		}
+	}
+}

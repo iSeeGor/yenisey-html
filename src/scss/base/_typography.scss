@@ -1,0 +1,195 @@
+/*============================================================================
+	#Typography
+	==============================================================================*/
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	font-size: 1.4rem;
+	line-height: 1.6;
+	color: $font_color;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	line-height: 1.4;
+	@include font_semiBold;
+	color: $font_color;
+	margin: 0 0 21px 0;
+}
+
+h1,
+.h1 {
+	font-size: 4.8rem;
+}
+
+h2,
+.h2 {
+	font-size: 3.6rem;
+}
+
+h3,
+.h3 {
+	font-size: 2.4rem;
+}
+
+h4,
+.h4 {
+	font-size: 1.8rem;
+}
+
+h5,
+.h5 {
+	font-size: 1.6rem;
+	@include font_medium;
+}
+
+h6,
+.h6 {
+	font-size: 1.4rem;
+	@include font_medium;
+}
+
+p {
+	margin: 0 0 22px 0;
+}
+
+strong {
+	@include font_semiBold;
+}
+
+/* Blog Text Content Styles */
+.article-content {
+	font-size: 1.6rem;
+	line-height: 1.75;
+	font-weight: $regular;
+
+	*:first-child {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	
+	h1,h2,h3,h4,h5,h6 {
+		// color: #0A3163;
+		margin-top: 50px;
+		margin-bottom: -10px;
+	}
+
+	h1 {
+		font-size: 3.4rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 2.4rem;
+	}
+
+	h4 {
+		font-size: 2rem;
+	}
+
+	h5 {
+		font-size: 1.8rem;
+	}
+
+	h6 {
+		font-size: 1.6rem;
+	}
+
+
+	p {
+		margin: 30px 0 0 0;
+	}
+
+	> div {
+		margin: 30px 0 0 0;
+	}
+
+	a {
+		color: $colorSecondary;
+		// text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		&:active,
+		&:visited {
+			color: $colorSecondary;	
+		}
+	}
+
+	img {
+		margin: 10px 0;
+	}
+
+	ul {
+		margin: 10px 0 0 0;
+		padding: 0 0 0 30px;
+		list-style: none;
+
+		li {
+			position: relative;
+			padding-left: 14px;
+			margin: 4px 0;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 10px;
+				left: 0;
+				width: 6px;
+				height: 6px;
+				background: $colorSecondary;
+				border-radius: 50%;
+				display: inline-block;
+				margin-right: 8px;
+			}
+		}
+	}
+
+	ol {
+		margin: 10px 0 0 0;
+		padding: 0 0 0 30px;
+	}
+
+	strong {
+		//   display: inline-block;
+	}
+}
+
+.article-content {
+	
+	img,
+	iframe {
+		padding: 0;
+		width: 100%;
+		
+	}
+
+	iframe {
+		border: none;
+		padding: 10px 0;
+	}
+}

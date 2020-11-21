@@ -1,0 +1,27 @@
+// Fonts
+@mixin font_regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+@mixin font_medium {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+@mixin font_semiBold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+@mixin font_bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+
+//
+
+@mixin transition($prop: all, $sec: 0.3s){
+  transition: $prop $sec ease;
+} 

@@ -1,0 +1,286 @@
+.services-header {
+//    margin-top: 110px;
+   padding-top: 280px;
+   padding-bottom: 100px;
+
+    &__title {
+        margin-bottom: 36px;
+        text-align: center;
+        font-size: 3.6rem;
+    }
+
+    &__text {
+        font-weight: normal;
+        font-size: 1.5rem;
+        letter-spacing: 0.02em;
+    }
+}
+
+.page-services {
+    overflow: hidden;
+}
+
+.services-tour {
+    padding-top: 300px;
+    padding-bottom: 110px;
+    background: url('../images/theme/services/services-tour_bg.jpg') no-repeat center -180px;
+    transition: background-position-y  2s cubic-bezier(1,.12,.21,.89);
+
+    &__inner {
+        margin: 0 24px;
+        padding-top: 80px;
+        background: white;
+        border-radius: 6px 6px 0 0;
+    }
+
+    &__inner-wrap {
+        margin: 0 -24px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        @include font_semiBold;
+        text-align: center;
+        font-size: 1.8rem;
+        color: $sky_color;
+        max-width: 80%;
+        margin: 0 auto 26px;
+    }
+
+    &__text-section {
+
+        &_strong {
+            @include font_semiBold;
+        }
+
+        &_strong_lines {
+            @include font_semiBold;
+            position: relative;
+            padding: 30px 0;
+
+            &::before, &::after {
+                content: '';
+                width: 290px;
+                height: 2px;
+                position: absolute;
+                background: $border_color;
+                left: 36px;
+                // transform: translateX(-50%);
+                top: 0;
+            }
+
+            &::after {
+                top: auto;
+                bottom: 0;
+            }
+        }
+    }
+
+    &__info-list {
+        margin: 36px 0 30px;
+    }
+
+    &__button {
+        width: 275px;
+        line-height: 1.6;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        // border-radius: 40px;
+        margin: 34px auto 0;
+    }
+}
+
+.servicesTour-list {
+
+    &__title {
+        color: $font_color;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        // flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    &__image-box {
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        border: 2px solid $colorSecondary;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 48px;
+        flex: 0 0 auto;
+    }
+
+    &__name {
+        color: $sky_color;
+        @include font_medium;
+    }
+}
+
+.services-txtBlock {
+
+    &__icon-box {
+        padding: 0 0 10px 20px;
+        margin-bottom: 30px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 290px;
+            height: 2px;
+            background: $colorSecondary;
+        }
+
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        @include font_medium;
+    }
+
+    &__image-box {
+        position: relative;
+        
+    }
+}
+
+.services-txtBlock_orange {
+    .services-txtBlock__icon-box::after {
+        background: $colorSecondary;
+    }
+
+    .services-txtBlock__title {
+        color: $font_color;
+    }
+}
+
+.servicesGrid {
+
+    &__one {
+        margin-bottom: 170px;
+    }
+
+    &__image_one {
+        top: 70px;
+        width: 500px;
+    }
+
+    &__two {
+        margin-bottom: 40px;
+    }
+
+    &__image_two {
+        top: -75px;
+
+        &::before {
+            position: absolute;
+            top: -280px;
+            left: -485px;
+            content: url('../images/services/serviceGrid_image_02_1.jpg')
+        }
+        &::after {
+            position: absolute;
+            left: -420px;
+            bottom: -185px;
+            content: url('../images/services/serviceGrid_image_02_2.jpg')
+        }
+    }
+
+    &__three {
+        margin-bottom: 125px;
+    }
+
+    &__four {
+        margin-bottom: 60px;
+    }
+
+    &__image_four {
+        width: 600px;
+        left: -170px;
+        top: -35px;
+
+    }
+
+    &__five {
+        margin-bottom: 42px;
+    }
+
+    &__image_five {
+        width: 500px;
+        left: -30px;
+        top: 210px;
+
+        &::before {
+            position: absolute;
+            top: -180px;
+            right: -380px;
+            content: url('../images/services/serviceGrid_image_04_1.jpg');
+            z-index: 10;
+        }
+        &::after {
+            position: absolute;
+            right: -314px;
+            bottom: -260px;
+            content: url('../images/services/serviceGrid_image_04_2.jpg');
+            z-index: 10;
+        }
+
+    }
+
+    &__six {
+        margin-bottom: 90px;
+    }
+
+    &__seven {
+        margin-bottom: 50px;
+    }
+
+    &__eight {
+        margin-bottom: 214px;
+    }
+
+    &__image_eight {
+        width: 500px;
+        top: 80px;
+        left: -30px;
+    }
+
+    &__nine {
+        margin-bottom: 50px;
+    }
+
+    &__image_nine {
+        width: 600px;
+        left: -120px;
+        top: -90px;
+    }
+}
+
+.services-txtBlocks {
+    padding-bottom: 150px;
+    background: url('../images/pages/services_grid_bg_01.jpg') no-repeat right 624px,
+                url('../images/pages/services_grid_bg_02.png') no-repeat center 3264px;
+}
+
+.services-txtBlocks__button {
+    width: 274px;
+    display: block;
+    margin: 0 auto;
+}

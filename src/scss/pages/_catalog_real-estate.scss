@@ -1,0 +1,454 @@
+/* #Breadcrumbs */
+.breadcrumb {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    // flex-wrap: wrap;
+    width: 70%;
+    white-space: nowrap;
+    
+    
+    &__item {
+        &:not(:last-of-type)::after {
+            content: '/';
+            display: inline-block;
+            padding: 0 3px 0 4px;
+        }
+    }
+
+    &__link {
+        text-decoration: underline;
+    }
+}
+
+/* #Favorits Counter*/
+.favorits-counter {
+    font-size: 1.6rem;
+    
+    &__link {
+        color: $sky_color;
+        text-decoration: underline;
+    }
+
+    &__num {
+        @include font_semiBold;
+        color: $sky_color;
+        text-decoration: none;
+        padding-left: 5px;
+        @include transition(color);
+        cursor: pointer;
+    }
+
+    &:hover .favorits-counter__num,
+    &:hover .favorits-counter__link{
+        color: $orange_color;
+    }
+}
+
+
+/* #Page Header */
+.page-header {
+    padding: 158px 0 0;
+    min-height: 556px;
+    background-image: url('../images/pages/page-header__real-estate_bg.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    &_real-astate {
+        background-image: url('../images/pages/page-header__real-estate_bg.png');
+    }
+
+    &_flat-sale {
+        background-image: url('../images/pages/page-header__real-estate_flat-sale_bg.png');
+    }
+
+    &_rent {
+        background-image: url('../images/pages/page-header__real-estate_rent_bg.png');
+    }
+
+    &_villas {
+        background-image: url('../images/pages/page-header__real-estate_villas_bg.jpg');
+    }
+
+    &_complexes {
+        background-image: url('../images/pages/page-header__complexes_bg.png');
+    }
+
+    &__inner {
+        padding: 0 20px;
+    }
+
+    &__breadcrumb {
+        margin: 0 0 37px 0;
+    }
+
+    &__favorits {
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+}
+
+/* #Catalog Header */
+.catalog-header {
+    margin-bottom: -294px;
+}
+
+
+/* #Order By */
+.order-by {
+    padding: 10px 0;
+    @include font_medium;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    &__select-block {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 60px;
+    }
+
+    &__label {
+        margin-right: 10px;
+    }
+    
+    &__select {
+        float: none;
+        color: $bace_color;
+        padding-right: 40px;
+        min-width: 260px;
+    }
+
+    .current {
+        opacity: 1 !important;
+    }
+} 
+
+/* #Page Content */
+.content-title {
+    color: $font_color;
+    font-size: 3.6rem;
+    text-align: center;
+    @include font_semiBold;
+    margin: 0 auto;
+    line-height: 1.32;
+}
+
+.main-content {
+
+    &__search {
+        margin: 0px 0 35px 0;
+    }
+
+    &__testimonial {
+        padding-bottom: 213px;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+    }
+}
+
+.catalog-search {
+    margin-bottom: -80px;
+}
+
+/* #Product List/Grid */
+.card {
+
+    &__image-area {
+        position: relative;
+    }
+
+    &__to-favorits {
+        position: absolute;
+        top: -4px;
+        right: 0px;
+    }
+}
+
+.to-favorits {
+    height: 46px;
+    width: 46px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+
+    &__icon {
+
+        &_active path:first-child {
+            fill: #D1202A !important;
+        }
+    }
+}
+
+.status {
+    padding: 10px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 3px;
+    background: white;
+    text-transform: uppercase;
+
+    &_new {
+        background: $colorSecondary;
+
+        .status__text {
+            color: white;
+        }
+    }
+
+    &__text {
+        @include font_medium;
+        color: $colorSecondary;
+        text-transform: uppercase;
+
+        &_new {
+            color: white;
+        }
+    }
+  
+}
+
+.card__status {
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.product-list {
+    margin: 20px 0 100px;
+
+    &__title {
+        margin: 0 auto 53px;
+        text-align: center;
+    }
+
+    &__card {
+        margin-bottom: 30px;
+        // overflow: hidden;
+    } 
+
+    &__pagination {
+        margin: 26px 0 60px;
+    }
+
+    &__button {
+        display: block;
+        margin: 0 auto;
+        min-width: 220px;
+    }
+}
+
+.pagination {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    // &__item {
+    //     padding: 0 10px;
+    // }
+
+    &__link {
+        color: $bace_color;
+        font-size: 1.6rem;
+        padding: 0 10px;
+        display: block;
+        position: relative;
+        line-height: 3.2rem;
+
+        &_current {
+            @include font_bold;
+            color: $colorSecondary;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                height: 2px;
+                width: 20px;
+                background: $colorSecondary;
+                transform: translateX(-50%);
+
+            }
+        }
+
+        &:hover {
+            color:$colorSecondary;
+        }
+    }
+}
+
+/* #Villas Info Text */
+.villas-info {
+    padding: 30px 0 48px 0;
+    
+    &__container {
+        padding: 0 83px;
+    }
+
+    &__image-box {
+        position: relative;
+        margin-bottom: 34px;
+
+        img {
+            position: relative;
+            z-index: 12;
+        }
+    }
+
+    &__image-title {
+        position: absolute;
+        margin: 60px;
+        margin-right: 10px;
+        font-size: 3rem;
+    }
+
+    &__text-box {
+        color: $bace_color;
+    }
+
+    &__head-box {
+        color: $bace_color;
+        position: relative;
+        padding: 30px 0 25px 0;
+
+        .paragraph {
+            margin: 0;
+        }
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 360px;
+            height: 2px;
+            background-color: $border_color;
+        }
+
+        &::after {
+            top: inherit;
+            bottom: 0;
+        }
+    }
+}
+
+.villas-privilages {
+    padding-left: 68px;
+    padding-top: 32px;
+
+    &__title {
+        font-size: 1.4rem;
+        color: $font_color;
+        margin: 0 0 15px 0;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__item {
+        margin-bottom: 23px;
+        position: relative;
+
+        &::before {
+            content: url('../images/icons/catalogs/catalog__icon-01.svg');
+            position: absolute;
+            top: 3px;
+            left: -62px;        
+        }
+
+        &:nth-child(2)::before{
+            content: url('../images/icons/catalogs/catalog__icon-02.svg');
+        }
+
+        &:nth-child(3)::before{
+            content: url('../images/icons/catalogs/catalog__icon-03.svg');
+            left: -68px;  
+        }
+    }
+}
+
+@media screen and (min-width:1199px){
+
+    /* Catalog - Villas */ 
+    .villas-info__left-column {
+        padding-right: 68px;
+        margin-right: -20px;
+    }
+}
+
+/* #Article */
+.catalog__article {
+    // margin-top: -130px;
+}
+
+.article {
+    max-width: 920px;
+    margin: 0 auto 100px; 
+
+    &__toggle {
+        margin-left: auto;
+        margin-right: 0;
+        display: block;
+        margin-top: 20px;
+    }
+
+}
+
+.article-content {
+    overflow: hidden;
+    transition: height .6s ease-in-out;
+
+    &._hide {
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 30%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #fff), to(transparent));
+            background: -o-linear-gradient(bottom, #fff 25%, transparent 100%);
+            background: linear-gradient(to top, #fff 25%, transparent 100%);
+            z-index: 10;
+        }
+    }
+}
+
+/* Complexes */
+.product-list__card_complexe {
+    height: 306px;
+
+    .card__title {
+        margin-bottom: 14px;
+    }
+
+    .card__property-item:last-child {
+        margin-bottom: 0;
+    }
+}
+.card__body_complexes .card__property-item {
+    white-space: nowrap;
+}

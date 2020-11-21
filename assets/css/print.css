@@ -1,0 +1,140 @@
+@media print {
+	
+	/* Disable Elements */
+	#jcont,
+	#jvlabelWrap,
+	.mobile-header,
+	.header__nav,
+	.header .button,
+	.single__favorits-counter,
+	.image-slider__thumb,
+	.single-description__branding,
+	.single-description__video-box,
+	.single__map,
+	.single-credit__image-box,
+	.single-credit__icon,
+	.product-list,
+	.single-request,
+	.widget-links,
+	.widget-address__item_work-time,
+	.footer__social-media {
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	.header {
+		position: static;
+	}
+
+	.header .topbar__inner {
+		padding: 0;
+		-webkit-box-pack: start;
+        -ms-flex-pack: start;
+		justify-content: flex-start;
+		
+	}
+
+	.header .logo {
+		order: -1;
+		margin-right: 40px;
+	}
+
+	.header .phones__select-list {
+		max-height: initial;
+		position: static;
+		min-width: auto;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex
+	}
+
+	.header .topbar__phones::before {
+		display: none;
+	}
+
+	.header .phones__item {
+		margin-bottom: 0 !important;
+		margin-right: 20px;
+	}
+
+	.header_down .topbar {
+		margin-top: 0 !important;
+	}
+	
+	.header_up .topbar {
+		margin-top: 0 !important;
+	}
+	
+	.single__header {
+		margin-top: 2px;
+	}
+
+	.single section {
+		page-break-inside: avoid;
+	}
+
+	.single .single-propery__list {
+		columns: 3;
+		-webkit-columns: 3;
+		-moz-columns: 3;
+		display: block;
+	}
+
+	.single .single-propery__list-item {
+		max-width: inherit;
+		margin-bottom: 10px;
+	}
+
+	.footer {
+		padding-top: 40px;
+		background-color: gray;
+		page-break-inside: avoid;
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+
+	.footer__widget-address {
+		padding-left: 0;
+		margin-top: 40px;
+		-ms-flex-pack: distribute;
+        justify-content: space-around;
+	}
+
+	.footer .widget-address__item_address {
+		flex: 0 0 auto;
+	}
+
+	.footer__copyrights,
+	.copyrights__links,
+	.copyrights__link {
+		color: white;
+	}
+	.copyrights .row {
+		-ms-flex-pack: distribute;
+        justify-content: space-around;
+	}
+	.copyrights .row > div {
+		-webkit-box-flex: 0;
+        -ms-flex: 0 0 33%;
+            flex: 0 0 33%;
+		max-width: 33%;
+	}
+
+	.footer__copyright {
+		padding-left: 0;
+	}
+	.copyrights__art-sites {
+		margin-left: 0;
+	}
+
+	.art-sites__text {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+	}
+
+}

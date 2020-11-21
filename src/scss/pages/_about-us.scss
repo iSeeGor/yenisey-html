@@ -1,0 +1,554 @@
+.coop-content {
+    // padding-top: 320px;
+    margin-bottom: 100px;
+    background-image: url('../images/theme/about-us/header_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.coop-header {
+    padding: 70px 0 50px;
+}
+
+.coop-about {
+    margin-bottom: 110px;
+
+    &__main {
+        max-width: 880px;
+        width: 100%;
+        margin: 0 auto;
+        background: white;
+        padding: 50px 65px 35px 65px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 0 0 50%;
+        font-size: 1.5rem;
+        line-height: 1.7;
+        padding: 0 15px;
+
+        &._full {
+            flex: 0 0 100%;
+        }
+    }
+
+    &__video {
+        max-width: 880px;
+        width: 100%;
+        margin: 0 auto;
+        background: white;
+        // padding-top: 60%;
+
+        .section-title {
+            font-size: 2.2rem;
+            flex: 0 0 260px;
+            max-width: 260px;
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        .video__button {
+            transform: scale(0.8);
+        }
+
+        .video__button-box {
+            margin: 0 !important;
+        }
+
+        .video__button-overlay {
+            width: 160px;
+            height: 160px;
+            background: hsla(214, 82%, 21%, 0.10);
+        }
+    }
+
+    &__video-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 3.4rem;
+        text-align: center;
+        margin-bottom: 0;
+        color: white;
+        font-weight: $semiBold;
+        letter-spacing: 0.04em;
+
+        span {
+            font-size: 4.4rem;
+            text-transform: uppercase;
+            display: block;
+        }
+    }
+
+    &__textarea {
+        // @include font_medium;
+        letter-spacing: 0.04em;
+
+    }
+}
+
+.coop-whyUs {
+
+    padding-bottom: 80px;
+    background-image: url('../images/pages/cooperation_about_bg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+
+    &__title {
+        position: relative;
+        padding-top: 30px;
+        margin-bottom: 27px;
+
+        &::before {
+            content: '';
+            width: 290px;
+            height: 2px;
+            top: 0;
+            background: $border_color;
+            position: absolute;
+        }
+    }
+
+    &__textarea {
+        @include font_medium;
+    }
+
+    &__slogan {
+        margin-top: 40px;
+        padding: 25px 0;
+        position: relative;
+        text-align: center;
+
+        &::before, &::after {
+            content: '';
+            width: 400px;
+            height: 2px;
+            background: white;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+    }
+
+    &__slogan-text {
+        @include font_semiBold;
+        font-size: 1.6rem;
+
+        &_eng {
+            margin-top: 28px;
+            color: $sky_color;
+        }
+    }
+
+    &__image {
+
+        img {
+            // max-width: 92%;
+        }
+    }
+
+    &__button {
+        width: 274px;
+        display: block;
+        margin: 40px auto 0;
+    }
+}
+
+
+.coop-video {
+
+    margin-bottom: 92px;
+    &__inner {
+        padding: 0 68px;
+    }
+}
+
+.managers {
+    margin-bottom: 100px;
+
+    &__container {
+        background: white;
+    }
+
+    &__header {
+        // padding-bottom: 330px;
+        margin-bottom: 100px;
+    }
+
+    &__header-title {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    &__grid-list {
+        .manager {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__header-text{
+        padding-bottom: 20px;
+    }
+}
+
+
+
+// .managers-section {
+//     background: url('../images/pages/manager_section_bg.png') no-repeat;
+//     background-position: center 86px;
+//     margin-bottom: 70px;
+// }
+
+.certificates-section {
+
+    &__title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+.certificates {
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 -15px;
+    }
+}
+
+.certificate-box {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 16px 46px rgba(202, 205, 214, 0.25);
+    flex: 0 0 190px;
+    max-width: 190px;
+    margin: 0 15px 30px;
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #174682;
+        opacity: 0;
+        visibility: hidden;
+        top: 0;
+        cursor: pointer;
+        transition: opacity 0.3s ease,
+                    visibility 0.3s ease;
+    }
+
+    &__overlay-icon {
+        display: block;
+        height: 100%;
+        position: relative;
+
+        &::before {
+            content: url('../images/icons/search-plus.svg');
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    &:hover .certificate-box__overlay {
+        visibility: visible;
+        opacity: 0.6;
+    }
+}
+
+/* # About Us Contacts + Map */
+
+.contactMap__aboutUs {
+    // background: url('../images/pages/aboutUs_contact_bg.png') no-repeat center top;
+    background-position-y: -100px;
+}
+
+.contactMap {
+    // padding-top: 400px;
+    // margin-top: 200px;
+
+    &__container {
+        // padding: 0 40px;
+    }
+
+    &__inner {
+        padding: 40px 40px 70px;
+        background: white;
+        border-radius: 6px 6px 0 0;
+        border: 2px solid #C1E2FB;
+    }
+
+    &__map {
+        width: 100%;
+        height: 430px;
+        margin-bottom: 60px;
+        overflow: hidden;
+        border-radius: 6px;
+
+        .map-holder {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__contacts * {
+        color: $font_color !important;
+        font-size: 1.6rem;
+        @include font_medium;
+              
+    }
+
+    &__contacts {
+        margin-bottom: 40px;
+
+        .link:hover {
+            color: $orange_color !important;
+        }
+
+        .widget-address__item {
+            margin-bottom: 30px;
+        }
+
+        .phones__select-list {
+            position: initial;
+            min-width: auto;
+            height: auto;
+            max-height: 100%;
+            padding: 0 12px 10px 0;
+        }
+
+        .phones__item-link {
+            padding-left: 45px;
+        }
+
+        .phones__select-list::after {
+            display: none;
+        }
+
+        .phones__item-link::before {
+            width: 26px;height: 26px;
+            background-size: 26px;
+        }
+
+        .phones__item:first-child {
+            margin-bottom: 18px;
+        }
+
+        .widget-address__item-title {
+            color: $sky_color !important;
+        }
+        
+    }
+
+    &__address-col {
+        padding-left: 52px;
+    }
+
+    &__workTime {
+        margin-left: -20px;
+        margin-top: 4px;
+        display: flex;
+    }
+}
+
+
+.parthners-info__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.parthners-info__item {
+    color: #0a3163 !important;
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.parthners-info__name,
+.parthners-info__address,
+.parthners-info__phone {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+/* .parthners-info__name::before, */
+.parthners-info__address::before,
+.parthners-info__phone::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    width: 24px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parthners-info__name {
+    /* margin-left: 37px; */
+}
+.parthners-info__name::before {
+    /* background-image: url('../images/icons/address_map-marker.svg');     */
+}
+.parthners-info__address::before {
+    background-image: url("../images/icons/address_map-marker.svg");
+}
+.parthners-info__phone::before {
+    background-image: url("../images/icons/address_phone.svg");
+}
+
+
+//Map BG Animation 
+@media screen and (min-width:1200px ){
+    [data-scroll="out"].contactMap__aboutUs {
+        background-position-y: 800px;
+    }
+}
+
+[data-scroll="in"].contactMap__aboutUs {
+    background-position-y: center;
+}
+
+.imageSlideAnim {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        z-index: 1;
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        transform: translateX(100%);
+    }
+    
+    img {
+        transition: transform 1s cubic-bezier(1, 0.03, 0.515, 0.955) ;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    [data-scroll="out"].imageSlideAnim {
+    
+        &::before {
+            transform: translateX(0);    
+        }
+    
+        img {
+            transform: scale(1.2) rotate(-5deg);    
+        }
+    }
+}
+
+
+
+[data-scroll="in"].imageSlideAnim {
+    &::before {
+        transform: translateX(100%);
+    }
+
+    img {
+        transform: scale(1) rotate(0);
+    }
+    
+}
+
+@media (max-width: 1199.98px) {
+
+    .coop-whyUs__image {
+        height: 100%;
+    }
+
+    .coop-whyUs__image img {
+        max-width: 100%;
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .coop-whyUs__image {
+        height: auto;
+        position: relative;
+        padding-top: 56.5%;
+    }
+
+    .coop-whyUs__image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .coop-about {
+
+        &__main {
+            display: block;
+        }
+
+        &__item {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .coop-about {
+        margin-bottom: 80px;
+
+        &__video-content {
+            flex-direction: column;
+
+            .section-title {
+                flex: 0 0 auto;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 440.98px) {
+    .coop-about__main {
+        padding: 50px 35px 35px 35px;
+    }
+}
+
+@media (max-width: 374.98px) {
+    .coop-about__main {
+        padding: 40px 15px 35px 15px;
+    }
+}

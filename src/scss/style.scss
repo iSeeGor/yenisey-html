@@ -1,0 +1,26 @@
+
+
+@import 'utils/all.scss'; 	// Utilits
+
+@import 'base/all.scss'; 	// Base
+@import 'ui/all.scss'; 		// UI
+
+// Layouts & pages
+@import 'layouts/header';
+
+@import 'pages/home';
+@import 'pages/catalog_real-estate';
+@import 'pages/single';
+@import 'pages/news';
+@import 'pages/favorits';
+@import 'pages/partnership';
+@import 'pages/about-us';
+@import 'pages/services';
+@import 'pages/review';
+@import 'pages/404';
+
+
+@import 'layouts/footer';
+@import 'layouts/popup';
+
+

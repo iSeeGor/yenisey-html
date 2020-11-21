@@ -1,0 +1,356 @@
+.button {
+    position: relative;
+	cursor: pointer;
+	font-weight: $medium;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    line-height: 40px;
+    box-shadow: none;
+    border: none;
+    height: 40px;
+    padding: 0 33px;
+    color: white;
+    background-color: $colorSecondary;
+    @include transition(background-color);
+    overflow: hidden;
+	-webkit-appearance: button;
+	text-decoration: none;
+	letter-spacing: 0.02em;
+
+	&:hover {
+		background-color: #0A3163;
+	}
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.button::before{
+    transition-delay: 0.2s;
+}
+
+.button_big {
+    width: 274px;
+    line-height: 1.4;
+    height: auto;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.button--blue {
+    background: $colorSecondary;
+    @include transition(background-color);
+
+    &:hover {
+        // background-color: $sky_color;
+    }
+}
+
+.button--small {
+	@include font_medium;
+    font-size: 1.2rem;
+    line-height: 28px;
+    height: 30px;
+    padding: 0 27px; 
+}
+
+.swiper-prev,
+.swiper-next {
+	position: relative;
+	display: flex;
+	outline: none;
+	cursor: pointer;
+	transition: opacity 0.1s ease-in;
+
+	&:hover {
+
+		&._xxl::before {
+			width: 40px;
+			height: 40px;
+		}
+
+		&._xl::before {
+			width: 30px;
+			height: 30px;
+		}
+	}
+	
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		border-radius: 50%;
+		transform: translate(0, -50%);
+		z-index: -1;
+		transition: height 0.2s ease, 
+					width 0.2s ease,
+					left 0.2s ease,
+					right 0.2s ease;
+	}
+
+	&._xxl {
+		height: 60px;
+		width: 32px;
+
+		.icon-arrow-angel {
+			height: 100%;
+			width: 100%;
+		}
+
+		&::before {
+			background: #C7E2F8;
+			height: 30px;
+			width: 30px;
+		}
+	}
+
+	&._white {
+		&::before {
+			background: white;
+		}
+	}
+
+	&._xl {
+		height: 44px;
+		width: 24px;
+
+		.icon-arrow-angel {
+			height: 100%;
+			width: 100%;
+		}
+
+		&::before {
+			height: 22px;
+			width: 22px;
+		}
+	}
+
+	&.swiper-button-disabled {
+		opacity: .5;
+		pointer-events: none;
+	}
+
+	.icon-arrow-angel {
+		fill: $font_color;
+	}
+}
+
+.swiper-prev {
+
+	&:hover {
+		&._xxl::before {
+			left: -14px;
+		}
+
+		&._xl::before {
+			left: -11px;
+		}
+	}
+
+	&._xxl::before {
+		left: -11px;
+	}
+
+	&._xl::before {
+		left: -8px;
+	}
+}
+
+.swiper-next {
+
+	&:hover {
+		&._xxl::before {
+			right: -14px;
+		}
+
+		&._xl::before {
+			right: -11px;
+		}
+	}
+
+	&._xxl::before {
+		right: -11px
+	}
+
+	&._xl::before {
+		right: -8px;
+	}
+
+	.icon-arrow-angel {
+		transform: rotate(180deg);
+	}
+}
+
+.button-play {
+	background: transparent;
+	position: relative;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: transform .3s ease;
+	
+
+	&__inner {
+		background: $colorSecondary;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background 0.3s ease;
+	}
+
+	&:hover {
+		.button-play__inner {
+			background: white;
+		}
+
+		.icon-play {
+			fill: $colorSecondary;
+		}
+
+		&::after {
+			border-color: white;
+			width: 110px;
+			height: 110px;
+		}
+
+		&::before {
+			width: 180px;
+			height: 180px;
+		}
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 120px;
+		height: 120px;
+		background: transparent;
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		will-change: transform, opacity;
+		transform: translate3d(-50%,-50%, 0);
+		z-index: -1;
+		border: 2px solid $colorSecondary;
+		transition: border-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+	}
+        
+
+    &::before {
+		content: '';
+        position: absolute;
+        width: 190px;
+        height: 190px;
+        background: #F9F9F9;
+        opacity: 0.3;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+		display: block;
+		will-change: transform, opacity;
+        transform: translate3d(-50%,-50%, 0);
+        z-index: -1;
+        cursor: pointer;
+		transition: width 0.3s ease, height 0.3s ease;
+        // animation: button-play-anim-2 1.4s linear infinite;
+    }
+
+	.icon-play {
+		width: 27px;
+		height: 30px;
+		position: relative;
+		margin-left: 6px;
+		transition: fill 0.3s ease;
+		fill: white;
+	}
+
+	&._white {
+
+		&:hover {
+
+			.button-play__inner {
+				background: $colorSecondary;
+
+				.icon-play {
+					fill: white;
+				}
+			}
+
+			&::after {
+				border-color: $colorSecondary;
+			}
+
+			&::before {
+				width: 120px;
+				height: 120px;
+			}
+
+		}
+
+		&::after {
+			width: 80px;
+			height: 80px;
+			border-color: white;
+			transition: border-color 0.3s ease;
+		}
+
+		&::before {
+			width: 130px;
+			height: 130px;
+			transition: width 0.3s ease, height 0.3s ease;
+		}
+
+		.button-play__inner {
+			background: white;
+			width: 54px;
+			height: 54px;
+		}
+
+		.icon-play {
+			fill: $colorSecondary;
+			width: 17px;
+			height: 20px;
+			transform: translate(-1px, 0);
+		}
+
+	}
+}
+
+.button._more {
+	position: relative;
+	// padding: 0 !important;
+	color: $colorSecondary;
+	background: transparent;
+	padding-right: 30px !important;
+	margin-right: 35px;
+	font-weight: 500 !important;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: calc(50% - 5px);
+		right: 0;
+		height: 12px;
+		width: 12px;
+		background-image: url('../images/icons/menu_angel_arrow_active.svg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center;
+		transition: transform 0.2s ease-in-out;
+	}
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&._open {
+
+		&::before {
+			transform: rotate(180deg);
+		}
+	}
+}

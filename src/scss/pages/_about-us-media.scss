@@ -1,0 +1,136 @@
+@media screen and (max-width: 1440px){
+    .managers-section {
+        background-position-x: 40%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .coop-video__inner iframe {
+        height: 480px;
+    }
+
+    .managers__header-text {
+        padding-bottom: 30px;
+        background: #fff;
+    }
+
+    .managers-section {
+        background: none;
+    }
+    .managers__header {
+        padding-bottom: 0;
+    }
+    .contactMap__address-col {
+        padding-left: 15px;
+    }
+    .contactMap__workTime {
+        flex-wrap: wrap;
+
+        .widget-address__item_winter-time {
+            padding-left: 40px;
+        }
+    }
+    .contactMap {
+        padding-top: 170px;
+    }
+
+}
+@media screen and (max-width:991px){
+    .coop-content {
+        // margin-top: 60px;
+    }
+    .coop-whyUs__row {
+        padding: 0;
+    }
+
+    .coop-whyUs__title{
+        text-align: center;
+    }
+
+    .coop-whyUs__title::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .coop-whyUs__image {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .coop-video__inner {
+        padding: 0;
+    }
+    .coop-video__inner iframe {
+        height: 420px;
+    }
+    .certificate-box {
+        width: 220px;
+        height: 300px;
+    }
+    .contactMap__container {
+        padding:0px;
+    }
+    .contactMap__workTime {
+        margin-left: 0;
+    }
+
+    .contactMap {
+        padding-top: 60px;
+    }
+    
+    .contactMap__workTime{
+        margin-top: 30px;
+    }
+
+    .managers__header-text.article-content > *:not(img) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width:767px){
+    .certificate-box  {
+        margin: 0 10px 30px;
+    }
+
+    .coop-about__title {
+        font-size: 2.8rem;
+    }
+
+    .coop-whyUs__slogan::before, .coop-whyUs__slogan::after {
+        width: 90%;
+    }
+
+    .coop-video__inner iframe {
+        height: 320px;
+    }
+
+    .managers__header-title {
+        font-size: 2.8rem;
+    }
+
+    .certificates-section__title {
+        font-size: 2.8rem;
+    }
+
+    .contactMap__contacts .phones__select-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:575px){
+    .contactMap__inner {
+        padding: 15px;
+    }
+
+    .contactMap__contacts .phones__select-list {
+        display: block;
+    }
+
+    .contactMap__contacts {
+        width: 300px;
+        margin: 0 auto;
+    }
+}

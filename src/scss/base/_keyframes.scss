@@ -1,0 +1,33 @@
+@keyframes button-play-anim-1 {
+    0%{
+        transform: translate3d(-50%,-50%, 0) scale3d(0.5, 0.5, 1) ;
+        opacity: 0;
+    }
+
+    50%{
+        transform: translate3d(-50%,-50%, 0) scale3d(0.9, 0.9, 1) ;
+        opacity: 0.8;
+    }
+
+    100%{
+        transform: translate3d(-50%,-50%, 0) scale3d(1.2, 1.2, 1) ;
+        opacity: 0;
+    }
+}
+
+@keyframes button-play-anim-2 {
+    0%{
+        transform: translate3d(-50%,-50%, 0) scale3d(0.5, 0.5, 1) ;
+        opacity: 0;
+    }
+
+    50%{
+        transform: translate3d(-50%,-50%, 0) scale3d(0.9, 0.9, 1) ;
+        opacity: 0.4;
+    }
+
+    100%{
+        transform: translate3d(-50%,-50%, 0) scale3d(1.2, 1.2, 1) ;
+        opacity: 0;
+    }
+}

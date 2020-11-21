@@ -1,0 +1,236 @@
+/* Footer
+   ============================================================== */
+
+.social-media {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+
+    &__item {
+        margin-right: 20px;
+
+        &:hover .social-media__icon {
+            fill: $colorSecondary;
+        }
+
+        &:last-child {
+            margin-right: none;
+        }
+    }
+    
+    &__icon {
+        fill: #C7E2F8;
+
+        @include transition(fill);
+    }
+}
+
+.footer {
+    background-color: #061F3F;
+    padding-top:  40px;
+    padding-bottom: 10px;
+    
+    &__widgets {
+        color: white;
+        @include font_medium;
+        margin-bottom: 20px;
+    }
+
+    &__social-widget{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .widget-logo {
+        margin-bottom: 20px;
+    }
+
+    &__copyrights {
+        color: #537095;
+        padding-top: 0;
+        margin-bottom: 20px;
+        @include font_medium;
+    }
+
+    &__copyright{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.copyrights__links {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #537095;
+}
+
+.copyrights__link {
+    color: #537095;
+}
+
+.copyrights__link:active,
+.copyrights__link:visited {
+    color: #537095;
+}
+
+.copyrights__link:hover {
+    color: #0DA9BA;
+}
+
+.social-media_list {
+    padding: 12px 0 12px 0px;
+}
+
+.widget-links {
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &__item {
+        position: relative;
+        padding-left: 17px;
+        margin-bottom: 20px;
+        display: inline-block;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 7px;
+            height: 7px;
+            background-color: $orange_color;
+            border-radius: 50%;
+        }
+    }
+
+    &__link {
+        color: white;
+        text-decoration: underline;
+        @include font_medium;
+        @include transition(color);
+
+        &:hover {
+            color: #0DA9BA;
+        }
+
+        &:active,&:focus {
+            color: white;
+        }
+
+    }
+
+    &_central-column {
+        padding: 0 0 0 60px;
+    }
+
+}
+
+.widget-address {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+        margin-bottom: 42px;
+        position: relative;
+        padding-left: 38px;
+        
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 1px;
+            left: 0px;
+            width: 24px;
+            height: 24px;
+            // background-image: url('../images/icons/address_map-marker.svg');
+            background-position: 0 0;
+            background-repeat: no-repeat;
+
+        }
+    }
+
+    &__item-title {
+        font-size: 1.4rem;
+        color: #C7E2F8;
+    }
+
+    &__item_address {
+        
+
+        max-width: 100%;
+        flex: 0 0 100%;
+        &::before {
+            background-image: url('../images/icons/address_map-marker.svg');
+        }
+    }
+
+    &__item_phone::before {
+        background-image: url('../images/icons/address_phone.svg');
+
+    }
+
+    &__item_mail::before {
+        background-image: url('../images/icons/address_mail.svg');
+
+    }
+
+    &__item_work-time {
+        line-height: 1.85; 
+    
+        &::before {
+            background-image: url('../images/icons/address_time.svg');
+        }    
+
+    }
+
+    &__item_winter-time {
+        padding-left: 20px;
+
+        &::before { display: none; }
+    }
+
+    &__time-num {
+        font-size: 1.6rem;
+    }
+}
+
+.copyrights__art-sites {
+    // margin-left: 70px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.art-sites {
+
+    &__text {
+        flex: 0 1 130px;
+    }
+
+
+    &__link {
+        margin-left: 20px;
+        flex: 0 0 auto;
+    }
+}
+
+.footer {
+    &__widget-address {
+        padding-left: 70px;
+    }
+}

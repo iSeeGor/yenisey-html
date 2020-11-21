@@ -1,0 +1,85 @@
+/* Favorits */
+.page-header_favorits {
+    background-image: url('../images/pages/favorits_bg.png');
+    background-size: contain;
+}
+
+.favorits-header {
+    margin-bottom: -316px;
+}
+
+/* Favorit Tabs */
+.favorit-tabs {
+    margin-bottom: 30px;
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        // justify-content: space-between;
+    }
+
+    &__list-item {
+        margin-right: 60px;
+        @include font_medium;
+        font-size: 1.8rem;
+        color: #76AED7;
+        background-color: #ececec;
+        display: block;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        display: flex;
+        height: 61px;
+        max-width: 200px;
+        min-width: 150px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        border-radius: 10px;
+        transition: color 0.5s ease, background-color .5s ease;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background-color: $orange_color;
+            color: white;
+        }
+        
+        &_current {
+            color: white;
+            background-color: $orange_color;
+        }
+    }
+} 
+
+.order-by__container_favorits {
+    padding: 10px 132px;
+}
+
+.favorits-error__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 200px;
+}
+
+.favorits-error__title {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.favorits-error__button {
+    position: relative;
+    z-index: 10;
+    display: block;
+    max-width: 220px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-appearance: inherit;
+}
