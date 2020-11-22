@@ -171,18 +171,17 @@ const formValidation = () => {
                 phone: {
                     required: true,
                     minlength: 13,
-                    // minlength: 13,
                 }
             },
-            messages: {
-                name: {
-                    required: siteText['validation_name']
-                },
-                phone: {
-                    required: siteText['validation_number'],
-                    minlength: siteText['validation_number_length']
-                }
-            }
+            // messages: {
+            //     name: {
+            //         required: "siteText['validation_name']"
+            //     },
+            //     phone: {
+            //         required: "siteText['validation_number']",
+            //         minlength: "siteText['validation_number_length']"
+            //     }
+            // }
         });
     })
 
@@ -198,15 +197,15 @@ const formValidation = () => {
                 // minlength: 10
             }
         },
-        messages: {
-            name: {
-                required: siteText['validation_name']
-            },
-            phone: {
-                required: siteText['validation_number'],
-                minlength: siteText['validation_number_length']
-            }
-        }
+        // messages: {
+        //     name: {
+        //         required: siteText['validation_name']
+        //     },
+        //     phone: {
+        //         required: siteText['validation_number'],
+        //         minlength: siteText['validation_number_length']
+        //     }
+        // }
     });
 };
 
@@ -235,7 +234,7 @@ const countryMask = () => {
         },
 
 
-        utilsScript: "/site/vendor/js/utils.js"
+        utilsScript: "assets/vendor/js/utils.js"
     };
 
 
