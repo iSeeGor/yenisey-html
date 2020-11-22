@@ -184,7 +184,7 @@ const googleMap = () => {
 	function initMap() {
         let popupContent = '<p class="marker_content">Address</p>',
             image = {
-                url: "/site/images/icons/map_marker.svg" // size: new google.maps.Size(126, 40),
+                url: "assets/images/icons/map_marker.svg" // size: new google.maps.Size(126, 40),
             },
             coordinates = coor,
             map = new google.maps.Map(document.querySelector(".map-holder"), {
