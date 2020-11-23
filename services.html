@@ -23,7 +23,6 @@
 	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#000000">
 	<meta name="theme-color" content="#ffffff">
-
 	<link rel="stylesheet" href="assets/css/preloder.css" />
 	<link rel="stylesheet" href="assets/css/normalize.css" />
 
@@ -35,6 +34,12 @@
 
 		iframe {
 			border: 0; 
+		}
+
+		.manager__image {
+			background-color: #d9d9d9;
+    		background-image: -o-linear-gradient(135deg,#d9d9d9 0,#f6f2f2 74%);
+    		background-image: linear-gradient(315deg,#d9d9d9 0,#f6f2f2 74%);
 		}
 	</style>
 
@@ -50,14 +55,6 @@
 			}, 1400);
 		})
 	</script>
-
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			document.querySelector('._dark').classList.remove('_dark');
-			document.querySelector('.page').classList.remove('_padding-top');
-		});
-	</script>
-
 
 </head>
 
@@ -439,936 +436,312 @@
 
 		</header>
 
-		<main class="main">
-
-			<div class="section-hero hero">
-				<div class="hero__wrapper">
-					<div class="hero__content">
-						<div class="hero__inner">
-							<h1 class="hero__title">
-								<span>Yenisey — застройщик №1</span>
-								<span>в южном регионе Турции</span>
-							</h1>
-							<h2 class="hero__subtitle">Компания Yenisey была основана в 2006 году и в настоящий момент
-								является одной из крупнейших строительных компаний в Алании.
-							</h2>
-							<div class="hero__footer">
-								<div class="hero__play-button">
-									<a data-fancybox href="https://www.youtube.com/watch?v=PKT3CcLJwaA"
-										class="button-play _white">
-										<span class="button-play__inner">
-											<svg class="icon-play">
-												<use xlink:href="assets/icons/sprite-svg.svg#icon-play-btn"></use>
-											</svg>
-										</span>
-									</a>
-									<span>Смотреть видео об Алании</span>
-								</div>
-								<button class="button hero__button" data-fancybox data-src="#openModalMainForm"
-									data-modal="true"
-									data-popup-title="Заказать консультацию">Заказать консультацию</button>
-							</div>
-						</div>
-					</div>
-
-					<div class="hero__image-bg">
-					</div>
-
-					<div class="hero__video">
-						<video playsinline autoplay muted loop data-poster="assets/images/theme/home/yr-hero-1920w.jpg"
-							class="hero__video-bg">
-							<source data-src="assets/video/yenisey-bg.webm" type="video/webm" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
-							<source data-src="assets/video/yenisey-bg.mp4" type="video/mp4" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
-						</video>
-					</div>
-
-					<div class="hero__deco">
-					</div>
-				</div>
-
-				<div class="hero__overlay"></div>
-			</div>
-
-			<section class="y-complexes">
-				<div class="container">
-					<h2 class="y-complexes__title section-title">Комплексы Yenisey</h2>
-
-					<div class="y-complexes__content">
-						<div class="swiper-container js-complexes-slider">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-
-									<div class="y-complexes__item">
-
-										<div class="y-complexes__complex-media">
-											<div class="swiper-container js-complex-media">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<figure class="figure">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/content/complexes/yenisey-8-01.jpg" alt="Yenisey Complex"
-																class="lazy-image">
-														</figure>
-														<div class="swiper-lazy-preloader"></div>
-													</div>
-													<div class="swiper-slide">
-														<figure class="figure">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/content/complexes/yenisey-8-02.jpg" alt="Yenisey Complex"
-																class="lazy-image">
-														</figure>
-														<div class="swiper-lazy-preloader"></div>
-													</div>
-													<div class="swiper-slide">
-														<figure class="figure">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/content/complexes/yenisey-8-03.jpg" alt="Yenisey Complex"
-																class="lazy-image">
-														</figure>
-														<div class="swiper-lazy-preloader"></div>
-													</div>
-													<div class="swiper-slide">
-														<figure class="figure">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/content/complexes/yenisey-8-04.jpg" alt="Yenisey Complex"
-																class="lazy-image">
-														</figure>
-														<div class="swiper-lazy-preloader"></div>
-													</div>
-												</div>
-											</div>
-
-											<div class="y-complexes__media-nav">
-												<div class="swiper-prev _white _xl js-y-media-prev">
-													<svg class="icon-arrow-angel">
-														<use xlink:href="assets/icons/sprite-svg.svg#icon-arrow-angle">
-														</use>
-													</svg>
-												</div>
-
-												<div class="y-complexes__pagination js-media-pag"></div>
-
-												<div class="swiper-next _white _xl js-y-media-next">
-													<svg class="icon-arrow-angel">
-														<use xlink:href="assets/icons/sprite-svg.svg#icon-arrow-angle">
-														</use>
-													</svg>
-												</div>
-											</div>
-										</div>
-
-										<div class="y-complexes__complex-body">
-											<div class="y-complexes__complex-name">Yenısey VIII</div>
-											<div class="y-complexes__complex-desc">
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-												<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, quod expedita. Id aspernatur consequuntur eveniet saepe! Minima alias, neque exercitationem molestiae temporibus ad modi quod maiores necessitatibus repellendus corrupti sit.</p>
-											</div>
-											<div class="y-complexes__meta">
-												<div class="y-complexes__meta-item">
-													<div class="y-complexes__meta-icon">
-														<img class="lazy-image"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="assets/icons/icon-beach.svg" alt="">
-													</div>
-													<div class="y-complexes__meta-title">100m</div>
-												</div>
-												<div class="y-complexes__meta-item">
-													<div class="y-complexes__meta-icon">
-														<img class="lazy-image"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="assets/icons/icon-building.svg" alt="">
-													</div>
-													<div class="y-complexes__meta-title">11</div>
-												</div>
-												<div class="y-complexes__meta-item">
-													<div class="y-complexes__meta-icon">
-														<img class="lazy-image"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="assets/icons/icon-airplane.svg" alt="">
-													</div>
-													<div class="y-complexes__meta-title">
-														26km</div>
-												</div>
-												<div class="y-complexes__meta-item">
-													<div class="y-complexes__meta-icon">
-														<img class="lazy-image"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="assets/icons/icon-square.svg" alt="">
-													</div>
-													<div class="y-complexes__meta-title">
-														200m<sup>2</sup></div>
-												</div>
-											</div>
-
-											<a href="#" class="y-complexes__button button">Подробнее о комплексе</a>
-										</div>
-
-									</div>
-
-								</div>
-
-								<div class="swiper-slide">
-
-									<div class="y-complexes__item">
-
-										<div class="y-complexes__complex-media">
-											<div class="swiper-container js-complex-media">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<figure class="figure">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/content/complexes/yenisey-viii-01.jpg" alt="Yenisey Complex"
-																class="lazy-image">
-														</figure>
-														<div class="swiper-lazy-preloader"></div>
-													</div>
-													<div class="swiper-slide">
-														<figure class="figure">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/content/complexes/yenisey-viii-02.jpg" alt="Yenisey Complex"
-																class="lazy-image">
-														</figure>
-														<div class="swiper-lazy-preloader"></div>
-													</div>
-													<div class="swiper-slide">
-														<figure class="figure">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/content/complexes/yenisey-viii-03.jpg" alt="Yenisey Complex"
-																class="lazy-image">
-														</figure>
-														<div class="swiper-lazy-preloader"></div>
-													</div>
-													<div class="swiper-slide">
-														<figure class="figure">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/content/complexes/yenisey-viii-04.jpg" alt="Yenisey Complex"
-																class="lazy-image">
-														</figure>
-														<div class="swiper-lazy-preloader"></div>
-													</div>
-												</div>
-											</div>
-
-											<div class="y-complexes__media-nav">
-												<div class="swiper-prev _white _xl js-y-media-prev">
-													<svg class="icon-arrow-angel">
-														<use xlink:href="assets/icons/sprite-svg.svg#icon-arrow-angle">
-														</use>
-													</svg>
-												</div>
-
-												<div class="y-complexes__pagination js-media-pag"></div>
-
-												<div class="swiper-next _white _xl js-y-media-next">
-													<svg class="icon-arrow-angel">
-														<use xlink:href="assets/icons/sprite-svg.svg#icon-arrow-angle">
-														</use>
-													</svg>
-												</div>
-											</div>
-										</div>
-
-										<div class="y-complexes__complex-body">
-											<div class="y-complexes__complex-name">Yenısey Yaparli</div>
-											<div class="y-complexes__complex-desc">
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-												<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, quod expedita. Id aspernatur consequuntur eveniet saepe! Minima alias, neque exercitationem molestiae temporibus ad modi quod maiores necessitatibus repellendus corrupti sit.</p>
-											</div>
-											<div class="y-complexes__meta">
-												<div class="y-complexes__meta-item">
-													<div class="y-complexes__meta-icon">
-														<img class="lazy-image"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="assets/icons/icon-beach.svg" alt="">
-													</div>
-													<div class="y-complexes__meta-title">250m</div>
-												</div>
-												<div class="y-complexes__meta-item">
-													<div class="y-complexes__meta-icon">
-														<img class="lazy-image"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="assets/icons/icon-building.svg" alt="">
-													</div>
-													<div class="y-complexes__meta-title">6</div>
-												</div>
-												<div class="y-complexes__meta-item">
-													<div class="y-complexes__meta-icon">
-														<img class="lazy-image"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="assets/icons/icon-airplane.svg" alt="">
-													</div>
-													<div class="y-complexes__meta-title">
-														29km</div>
-												</div>
-												<div class="y-complexes__meta-item">
-													<div class="y-complexes__meta-icon">
-														<img class="lazy-image"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="assets/icons/icon-square.svg" alt="">
-													</div>
-													<div class="y-complexes__meta-title">
-														180m<sup>2</sup></div>
-												</div>
-											</div>
-
-											<a href="#" class="y-complexes__button button">Подробнее о комплексе</a>
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<div class="swiper-slide-counter">
-								<span class="swiper-slide-counter__current"></span>/<span
-									class="swiper-slide-counter__total"></span>
-							</div>
-						</div>
-
-						<div class="y-complexes__nav">
-							<div class="swiper-prev _blue _xxl js-yc-swiper-prev">
-								<svg class="icon-arrow-angel">
-									<use xlink:href="assets/icons/sprite-svg.svg#icon-arrow-angle"></use>
-								</svg>
-							</div>
-							<div class="swiper-next _blue _xxl js-yc-swiper-next">
-								<svg class="icon-arrow-angel">
-									<use xlink:href="assets/icons/sprite-svg.svg#icon-arrow-angle"></use>
-								</svg>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="y-property-grid __home-page">
-				<div class="container">
-
-					<h2 class="y-property-grid__section-title section-title">Недвижимость Yenisey</h2>
-
-					<div class="y-property-grid__content">
-						<div class="y-property-grid__item">
-							<div class="y-card">
-								<div class="y-card__inner">
-									<div class="y-card__thumbnail">
-										<a href="#">
-											<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/content/room/room-image-thumb-475-01.jpg" class="lazy-image card__image" alt="" >
-										</a>
-
-										<a href="#" class="y-card__complex-name">YENISEY PALACE</a>
-
-										<div class="status card__status status_new" style="z-index: 11;">
-											<span class="status__text status__text_new">New</span>
-										</div>
-									</div>
-									<div class="y-card__body">
-										<div class="y-card__content">
-											<a href="#" class="y-card__title">3-комнатная квартира на первой береговой линии</a>
-											<div class="y-card__price">200 000 €</div>
-										</div>
-										<div class="y-card__meta">
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-bead">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-bead"></use>
-												</svg>
-												<div class="y-card__meta-txt">2</div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-square">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-square"></use>
-												</svg>
-												<div class="y-card__meta-txt">180m<sup>2</sup></div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-beach">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-beach"></use>
-												</svg>
-												<div class="y-card__meta-txt">100m</div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-floor">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-floor"></use>
-												</svg>
-												<div class="y-card__meta-txt">7</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="y-property-grid__item">
-							<div class="y-card">
-								<div class="y-card__inner">
-									<div class="y-card__thumbnail">
-										<a href="#">
-											<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/content/room/room-image-thumb-475-02.jpg" class="lazy-image card__image" alt="" >
-										</a>
-
-										<a href="#" class="y-card__complex-name">YENISEY PALACE</a>
-									</div>
-									<div class="y-card__body">
-										<div class="y-card__content">
-											<a href="#" class="y-card__title">2-комнатная квартира на первой береговой линии</a>
-											<div class="y-card__price">120 000 €</div>
-										</div>
-										<div class="y-card__meta">
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-bead">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-bead"></use>
-												</svg>
-												<div class="y-card__meta-txt">1</div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-square">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-square"></use>
-												</svg>
-												<div class="y-card__meta-txt">160m<sup>2</sup></div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-beach">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-beach"></use>
-												</svg>
-												<div class="y-card__meta-txt">50m</div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-floor">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-floor"></use>
-												</svg>
-												<div class="y-card__meta-txt">2</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="y-property-grid__item">
-							<div class="y-card">
-								<div class="y-card__inner">
-									<div class="y-card__thumbnail">
-										<a href="#">
-											<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/content/room/room-image-thumb-475-03.jpg" class="lazy-image card__image" alt="" >
-										</a>
-
-										<a href="#" class="y-card__complex-name">YENISEY PALACE</a>
-									</div>
-									<div class="y-card__body">
-										<div class="y-card__content">
-											<a href="#" class="y-card__title">2-комнатная квартира на первой береговой линии</a>
-											<div class="y-card__price">50 000 €</div>
-										</div>
-										<div class="y-card__meta">
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-bead">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-bead"></use>
-												</svg>
-												<div class="y-card__meta-txt">1</div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-square">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-square"></use>
-												</svg>
-												<div class="y-card__meta-txt">80m<sup>2</sup></div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-beach">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-beach"></use>
-												</svg>
-												<div class="y-card__meta-txt">50m</div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-floor">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-floor"></use>
-												</svg>
-												<div class="y-card__meta-txt">2</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="y-property-grid__item">
-							<div class="y-card">
-								<div class="y-card__inner">
-									<div class="y-card__thumbnail">
-										<a href="#">
-											<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/content/room/room-image-thumb-475-01.jpg" class="lazy-image card__image" alt="" >
-										</a>
-
-										<a href="#" class="y-card__complex-name">YENISEY PALACE</a>
-
-										<div class="status card__status status_new" style="z-index: 11;">
-											<span class="status__text status__text_new">New</span>
-										</div>
-									</div>
-									<div class="y-card__body">
-										<div class="y-card__content">
-											<a href="#" class="y-card__title">3-комнатная квартира на первой береговой линии</a>
-											<div class="y-card__price">200 000 €</div>
-										</div>
-										<div class="y-card__meta">
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-bead">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-bead"></use>
-												</svg>
-												<div class="y-card__meta-txt">2</div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-square">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-square"></use>
-												</svg>
-												<div class="y-card__meta-txt">180m<sup>2</sup></div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-beach">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-beach"></use>
-												</svg>
-												<div class="y-card__meta-txt">100m</div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-floor">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-floor"></use>
-												</svg>
-												<div class="y-card__meta-txt">7</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="y-property-grid__item">
-							<div class="y-card">
-								<div class="y-card__inner">
-									<div class="y-card__thumbnail">
-										<a href="#">
-											<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/content/room/room-image-thumb-475-02.jpg" class="lazy-image card__image" alt="" >
-										</a>
-
-										<a href="#" class="y-card__complex-name">YENISEY PALACE</a>
-									</div>
-									<div class="y-card__body">
-										<div class="y-card__content">
-											<a href="#" class="y-card__title">2-комнатная квартира на первой береговой линии</a>
-											<div class="y-card__price">120 000 €</div>
-										</div>
-										<div class="y-card__meta">
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-bead">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-bead"></use>
-												</svg>
-												<div class="y-card__meta-txt">1</div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-square">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-square"></use>
-												</svg>
-												<div class="y-card__meta-txt">160m<sup>2</sup></div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-beach">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-beach"></use>
-												</svg>
-												<div class="y-card__meta-txt">50m</div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-floor">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-floor"></use>
-												</svg>
-												<div class="y-card__meta-txt">2</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="y-property-grid__item">
-							<div class="y-card">
-								<div class="y-card__inner">
-									<div class="y-card__thumbnail">
-										<a href="#">
-											<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/content/room/room-image-thumb-475-03.jpg" class="lazy-image card__image" alt="" >
-										</a>
-
-										<a href="#" class="y-card__complex-name">YENISEY PALACE</a>
-									</div>
-									<div class="y-card__body">
-										<div class="y-card__content">
-											<a href="#" class="y-card__title">2-комнатная квартира на первой береговой линии</a>
-											<div class="y-card__price">50 000 €</div>
-										</div>
-										<div class="y-card__meta">
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-bead">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-bead"></use>
-												</svg>
-												<div class="y-card__meta-txt">1</div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-square">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-square"></use>
-												</svg>
-												<div class="y-card__meta-txt">80m<sup>2</sup></div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-beach">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-beach"></use>
-												</svg>
-												<div class="y-card__meta-txt">50m</div>
-											</div>
-											<div class="y-card__meta-item">
-												<svg class="y-card__meta-icon icon-floor">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-floor"></use>
-												</svg>
-												<div class="y-card__meta-txt">2</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="y-choice">
-				<div class="container">
-					<h2 class="y-choice__section-title section-title _white">Поиск недвижимости</h2>
-
-					<div class="choice-block">
-						<form class="choice-form" autocomplete="off">
-							<div class="choice-form__body">
-								<div class="choice-form__row">
-									<div class="choice-form__item">
-										<div class="choice-form__label">Статус</div>
-										<select name="status" class="select">
-											<option value="rent">Аренда</option>
-											<option value="sale">Продажа</option>
-										</select>
-									</div>
-									<div class="choice-form__item">
-										<div class="choice-form__label">Комплекс</div>
-										<select name="complex" class="select">
-											<option value="all">Все</option>
-											<option value="complex-01">Complex #1</option>
-											<option value="complex-01">Complex #2</option>
-											<option value="complex-01">Complex #3</option>
-											<option value="complex-01">Complex #4</option>	
-										</select>
-									</div>
-									<div class="choice-form__item">
-										<div class="choice-form__label">Тип</div>
-										<select name="type" class="select">
-											<option value="all">Все</option>
-											<option value="rooms">Квартиры</option>
-											<option value="penthouse">Пентхаусы</option>
-											<option value="commercial">Коммерческая</option>
-										</select>
-									</div>
-					
-									<div class="choice-form__item">
-										<div class="choice-form__label">Комнат</div>
-										<select name="layout" class="select">
-											<option value="all">Все</option>
-											<option value="one-plus-one">1 + 1</option>
-											<option value="two-plus-one">2 + 1</option>
-											<option value="three-plus-one">3 + 1</option>
-										</select>
-									</div>
-					
-									<div class="choice-form__item">
-										<div class="choice-form__label">Район</div>
-										<select  name="region" class="select">
-											<option value="all">Все</option>
-												<option value="mahmutlar">Махмутлар</option>
-												<option value="oba">Оба</option>
-										</select>
-									</div>
-								</div>
-								<div class="choice-form__row _bottom">
-									<div class="choice-form__item">
-										<div class="choice-form__label">Стоимость (€)</div>
-										<input class="input choice-form__input" type="text" name="price_from" placeholder="От">
-									</div>
-									<div class="choice-form__item">
-										<input class="input choice-form__input" type="text" name="price_to" placeholder="До">
-									</div>
-					
-									<div class="choice-form__item _full">
-										<button class="button _more" type="button">Дополнительно</button>
-										<button class="button search-form__button" type="submit">Подобрать недвижимость</button>
-									</div>
-								</div>
-							</div>
-							<div class="choice-form__footer">
-								<div class="choice-tags _closed">
-									<div class="choice-tags__content">
-										<label class="choice-tags__item" for="choice-tags-item-01">
-											<input type="checkbox" class="choice-tags__checkbox" id="choice-tags-item-01">
-											option #1
-										</label>
-										<label class="choice-tags__item" for="choice-tags-item-02">
-											<input type="checkbox" class="choice-tags__checkbox" id="choice-tags-item-02">
-											option #2
-										</label>
-										<label class="choice-tags__item" for="choice-tags-item-03">
-											<input type="checkbox" class="choice-tags__checkbox" id="choice-tags-item-03">
-											option #3
-										</label>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-
-				<div class="y-choice__bg">
-					<picture class="lazy-source">
-						<source type="image/webp" data-srcset="assets/images/theme/home/filter-section-bg.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
-						<img class="image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  data-srcset="assets/images/theme/home/filter-section-bg.jpg"
-							alt="filter bg image">
-					</picture>
-				</div>
-			</section>
-
-			<section class="y-video">
-				<div class="container">
-					<h2 class="y-video__title section-title">Видео компании Yenisey</h2>
-
-					<div class="y-video__content">
-						<div class="swiper-container js-y-video-slider">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="y-video__player">
-										<div class="y-video__iframe">
-											<iframe width="560" height="315"
-												data-src="https://www.youtube.com/embed/OmWRRK03AWk?autoplay=1"
-												allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-												allowfullscreen></iframe>
-										</div>
-										<div class="y-video__poster">
-											<picture class="lazy-source">
-												<source data-srcset="https://i.ytimg.com/vi_webp/OmWRRK03AWk/hq720.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
-												<img data-srcset="https://i.ytimg.com/vi/OmWRRK03AWk/hq720.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-													alt="">
-											</picture>
-										</div>
-										<button class="button-play js-y-video-play" title="play button">
-											<span class="button-play__inner">
-												<svg class="icon-play">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-play-btn"></use>
-												</svg>
-											</span>
-										</button>
-									</div>
-									<div class="y-video__video-name">Lorem, ipsum dolor.</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="y-video__player">
-										<div class="y-video__iframe">
-											<iframe width="560" height="315"
-												data-src="https://www.youtube.com/embed/a9UKV_ED_xU?autoplay=1"
-												allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-												allowfullscreen></iframe>
-										</div>
-										<div class="y-video__poster">
-											<picture class="lazy-source">
-												<source data-srcset="https://i.ytimg.com/vi_webp/a9UKV_ED_xU/hq720.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
-												<img data-srcset="https://i.ytimg.com/vi/a9UKV_ED_xU/hq720.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-													alt="">
-											</picture>
-										</div>
-										<button class="button-play js-y-video-play" title="play button">
-											<span class="button-play__inner">
-												<svg class="icon-play">
-													<use xlink:href="assets/icons/sprite-svg.svg#icon-play-btn"></use>
-												</svg>
-											</span>
-										</button>
-									</div>
-									<div class="y-video__video-name">Lorem, ipsum dolor.</div>
-								</div>
-							</div>
-
-							<div class="y-video__nav">
-								<div class="swiper-prev _white _xxl js-yv-swiper-prev">
-									<svg class="icon-arrow-angel">
-										<use xlink:href="assets/icons/sprite-svg.svg#icon-arrow-angle"></use>
-									</svg>
-								</div>
-								<div class="swiper-next _white _xxl js-yv-swiper-next">
-									<svg class="icon-arrow-angel">
-										<use xlink:href="assets/icons/sprite-svg.svg#icon-arrow-angle"></use>
-									</svg>
-								</div>
-							</div>
-						</div>
-						<button class="y-video__button button">Больше видео</button>
-					</div>
-				</div>
-				<picture class="lazy-source">
-					<source type="image/webp" data-srcset="assets/images/theme/home/y-video-bg.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
-					<img class="y-video__bg-image" data-srcset="assets/images/theme/home/y-video-bg.jpg"
-						alt="Video Block BG" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+		<section class="services-header y-header-bg">
+			<div class="y-header-bg__image">
+				<picture>
+					<source type="image/webp" srcset="assets/images/theme/services/services.webp">
+					<img class="" src="assets/images/theme/services/services.jpg" alt="services image"> 
 				</picture>
-			</section>
-
-			<section class="y-news">
+			</div>
+		
+			<div class="container">
+				<div class="row">
+					<div class="col-12"><h1 class="services-header__title">Услуги компании Yenisey</h1></div>
+					<div class="col-xl-10 offset-xl-1">
+						<div class="article__content article-content services-header__text">
+							<p><strong>Yenisey – клиентоориентированная компания.</strong> В своей работе мы используем персональный подход, учитываем индивидуальные потребности и предпочтения клиентов, выстраиваем доверительные дружеские отношения.</p><p>Мы оказываем услуги, качество которых соответствует ожиданиям потребителей и превосходит их. Готовность руководства компании к открытому общению, гибкость в отношении меняющихся запросов потребителей, стремление им помочь, постоянная работа над улучшением сервиса – основные приоритеты нашей работы.</p><p>Покупая недвижимость от Yenisey, Вы можете воспользоваться пакетом эксклюзивных опций, которые не заканчиваются на этапе приобретения собственности. Для нас имеет первостепенное значение возможность удовлетворить разнообразные потребности покупателей.&nbsp;</p><p><strong>Yenisey – это больше, чем просто дом!</strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<main class="page__services page-services">
+			<section class="services-tour" id="service_tour">
 				<div class="container">
-					<h2 class="y-news__title section-title">Новые публикации</h2>
-
-					<div class="y-news__content">
-						<div class="swiper-container js-y-news-slider">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="y-news__card">
-										<div class="y-news__media">
-											<a href="#" class="y-news__media-link">
-												<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/content/news-thumb.jpg" class="lazy-image article-cart__image" alt="">
-												<div class="swiper-lazy-preloader"></div>
-											</a>
+					<div class="services-tour__inner">
+						<div class="services-tour__inner-wrap">
+							<div class="row">
+								<div class="col-12">
+									<h3 class="h2 services-tour__title">Ознакомительный тур</h3>
+									<p class="services-tour__subtitle">Приглашаем Вас в увлекательный ознакомительный тур в солнечную Аланью!</p>
+								</div>
+								<div class="col-lg-10 offset-lg-1">
+									<div class="row">
+										<div class="col-md-6">
+											<p class="services-tour__text-section services-tour__text-section_strong">Ознакомительный тур является неотъемлемой и основополагающей частью процесса покупки недвижимости за рубежом.</p>
 										</div>
-										<div class="y-news__date">20.11.2020</div>
-										<a href="#" class="y-news__card-title">Название публикации</a>
+		
+										<div class="col-md-6">
+											<p class="services-tour__text-section">Можно долго просматривать фотографии, читать информацию, однако, именно ознакомительная поездка в сопровождении представителя нашей компании поможет Вам больше узнать об Алании, достопримечательностях, местных жителях и их образе жизни, а также посетить интересующие Вас объекты недвижимости.</p>
+										</div>
+									</div>
+		
+									<div class="services-tour__info-list servicesTour-list">
+										<div class="h4 servicesTour-list__title">В рамках тура обеспечиваем:</div>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="servicesTour-list__item">
+													<div class="servicesTour-list__image-box">
+														<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/ticket.svg" alt="Srvices Tour Item Icon" class="servicesTour-list__icon lazy-image">
+													</div>
+													<div class="servicesTour-list__name">Помощь в бронировании авиабилетов</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="servicesTour-list__item">
+													<div class="servicesTour-list__image-box">
+														<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/map.svg" alt="Srvices Tour Item Icon" class="servicesTour-list__icon lazy-image">
+													</div>
+													<div class="servicesTour-list__name">Экскурсию по достопримечательностям Аланьи</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="servicesTour-list__item">
+													<div class="servicesTour-list__image-box">
+														<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/car.svg" alt="Srvices Tour Item Icon" class="servicesTour-list__icon lazy-image">
+													</div>
+													<div class="servicesTour-list__name">Встречу в аэропорту, личный VIP-трансфер</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="servicesTour-list__item">
+													<div class="servicesTour-list__image-box">
+														<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/kitchen.svg" alt="Srvices Tour Item Icon" class="servicesTour-list__icon lazy-image">
+													</div>
+													<div class="servicesTour-list__name">Презентацию и просмотр объектов недвижимости Yenisey</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="servicesTour-list__item">
+													<div class="servicesTour-list__image-box">
+														<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/resort.svg" alt="Srvices Tour Item Icon" class="servicesTour-list__icon lazy-image">
+													</div>
+													<div class="servicesTour-list__name">Размещение в апартаментах в одном из наших комплексов</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="servicesTour-list__item">
+													<div class="servicesTour-list__image-box">
+														<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/business.svg" alt="Srvices Tour Item Icon" class="servicesTour-list__icon lazy-image">
+													</div>
+													<div class="servicesTour-list__name">Консультацию по процедуре оформления недвижимости в собственность</div>
+												</div>
+											</div>
+										</div>
+									</div>
+		
+									<div class="row">
+										<div class="col-md-6">
+											<p class="services-tour__text-section services-tour__text-section_strong_lines">Все это мы предоставляем абсолютно бесплатно. Вы оплачиваете только перелет.</p>
+										</div>
+		
+										<div class="col-md-6">
+											<p class="services-tour__text-section">В качестве альтернативы, если Вы самостоятельно решили посетить Турцию и просто хотели бы встретиться с нами, мы с удовольствием покажем Вам недвижимость в любой день и в любое время, удобное для Вас. Как и в случае с ознакомительным туром, мы гарантируем, что Вы получите столько же информации и впечатлений.</p>
+										</div>
 									</div>
 								</div>
-								<div class="swiper-slide">
-									<div class="y-news__card">
-										<div class="y-news__media">
-											<a href="#" class="y-news__media-link">
-												<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/content/news-thumb.jpg" class="lazy-image article-cart__image" alt="">
-												<div class="swiper-lazy-preloader"></div>
-											</a>
-										</div>
-										<div class="y-news__date">21.11.2020</div>
-										<a href="#" class="y-news__card-title">Название публикации, длинное название</a>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="y-news__card">
-										<div class="y-news__media">
-											<a href="#" class="y-news__media-link">
-												<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/content/news-thumb.jpg" class="lazy-image article-cart__image" alt="">
-												<div class="swiper-lazy-preloader"></div>
-											</a>
-										</div>
-										<div class="y-news__date">20.11.2020</div>
-										<a href="#" class="y-news__card-title">Название публикации</a>
-									</div>
-								</div>
+		
+								<button class="button services-tour__button"
+								data-fancybox data-src="#openModalMainForm" data-modal="true"
+								data-popup-title="Перезвоните мне">Оставить заявку на бесплатный тур</button>
 							</div>
-							<div class="js-yn-swiper-pag"></div>
-							<a href="#" class="y-news__button button">Смотреть все</a>
 						</div>
 					</div>
 				</div>
 			</section>
-
-			<section class="section-property property">
-
+		
+			<section class="services-txtBlocks servicesGrid" >
 				<div class="container">
-
-					<div class="property__header">
-						<h2 class="section-title property__section-title">Качественная недвижимость от
-							застройщика в Аланье</h2>
-
-						<div class="property__header-inner row">
-
-							<div class="col-lg-6">
-								<p class="property__header-text">
-									<strong>Средиземноморское побережье Турции</strong> – не только райский,
-									солнечный уголок, идеально подходящий для достойной жизни и комфортабельного отдыха.
-									Сегодня это также и уникальное место для выгодного вложения капитала в недвижимость
-									иностранными гражданами.
-								</p>
+		
+					<!-- one -->
+					<div class="row servicesGrid__one" id="document">
+						<div class="order-1 order-lg-0 col-lg-5 offset-lg-2">
+							<div class="services-txtBlock services-txtBlock_blue">
+								<div class="services-txtBlock__icon-box">
+									<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/exam.svg" class="lazy-image" alt="Services txt Block Icon">
+								</div>
+								<h3 class="services-txtBlock__title">Сопровождение сделки и оформление документов</h3>
+								<div class="services-txtBlock__content">
+									<p>Мы знаем, как наши покупатели ценят время и готовы предложить профессиональную юридическую помощь в подготовке к сделке купли-продажи, а также на этапе оформления всех документов.</p>
+									<p>Наша репутация опытного и надежного девелопера позволит Вам не беспокоиться о текущих организационных вопросах и просто наслаждаться покупкой собственности в Турции.</p>
+								</div>
 							</div>
-
-							<div class="col-lg-6">
-								<p class="property__header-text">
-									На морском побережье раскинулись одни из самых популярных курортов,
-									слава о которых за последние годы без преувеличения облетела весь мир - это Анталья,
-									Алания и их административные районы.
-								</p>
-							</div>
-
 						</div>
-
-					</div>
-
-					<div class="property__text-blocks _hide">
-
-						<div class="property__body">
-
-							<div class="property__text-block">
-								<p><strong>Многих потенциальных покупателей привлекает именно Аланья и её
-										районы (Махмутлар, Авсаллар, Конаклы, Тосмур, Кестель и другие), так как здесь
-										сосредоточены все преимущества проживания и отдыха:</strong></p>
-
-								<p class="_dott">Климатические условия позволяют наслаждаться солнцем и
-									теплой погодой практически круглый год. Лазурное чистое море и уникальный ландшафт
-									гарантируют массу позитивных впечатлений.</p>
-								<p class="_dott">Огромное количество природных и исторических
-									достопримечательностей завораживают своим величием и незыблемостью. Власти
-									государства всячески оберегают все памятки истории, культуры, природы, что
-									гарантирует их сохранность в первозданном виде.</p>
-								<p class="_dott">Территория курорта активно застраивается и развивается.
-									Наряду с экономическим ростом державы это более чем заманчиво относительно вложений
-									в строительную сферу, приобретения жилой и коммерческой собственности.</p>
-								<p class="_dott">Широкий выбор первичной недвижимости по очень
-									привлекательным ценам.</p>
-								<p class="_dott">Отличное качество жилых комплексов, где предусмотрено
-									девелопером всё до мелочей – от технологии возведения и применения современных
-									материалов, до благоустройства территории, озеленения и запуска инфраструктуры в
-									максимальном объеме.</p>
-							</div>
-
-						</div>
-
-						<div class="property__how-buy how-buy">
-							<h2 class="section-title how-buy__title">Как купить квартиру от застройщика в
-								Алании?</h2>
-
-							<div class="how-buy__content">
-								<p class="paragraph"><strong>Успешность человека подтверждается его
-										результатами в труде и наличием широких возможностей для улучшения своей
-										жизни.</strong></p>
-								<p>
-									<picture class="lazy-source">
-										<source data-srcset="assets/images/content/home-text-image-470.jpg"
-											media="(max-width: 475px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
-										<source data-srcset="assets/images/content/home-text-image-760.jpg"
-											media="(max-width: 992px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
-										<img data-srcset="assets/images/content/home-text-image-1024.jpg"
-											alt="video-poster" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
-									</picture>
-								</p>
-								<p class="paragraph">В современном мире свидетельством успеха являются не
-									только хорошая профессия, блестящая карьера, семья, дом, но и собственность за
-									границей. Поэтому, многие сегодня выбирают Аланию, где действительно можно выгодно
-									приобрести качественные квадратные метры.</p>
-								<p class="paragraph">На рынке представлены самые разные объекты – от
-									вторичной жилплощади до вариантов без посредников.</p>
-
-								<p><strong>Популярность покупки жилья от застройщика в Турции обоснована
-										следующими важными особенностями:</strong></p>
-								<p class="_dott">Девелоперские компании предлагают соискателям купить новые
-									квартиры на этапе строительства. Вкладывая таким образом свои деньги, можно
-									значительно сэкономить.</p>
-
-								<p class="_dott">Как правило, строительные фирмы предоставляют клиенту на
-									выбор удобные схемы расчета: ипотечное кредитование и беспроцентную рассрочку.</p>
-
-								<p class="_dott">Купить квартиру в Аланье без посредников выгодно и с точки
-									зрения прямых договоренностей непосредственно с продавцом. То есть, покупатель будет
-									иметь дело с первым лицом, что дополнительно гарантирует безопасность денежных
-									вложений.</p>
+						<div class="order-0 order-lg-1  col-lg-4 offset-lg-1">
+							<div class="services-txtBlock__image-box servicesGrid__image_one">
+								<img class="services-txtBlock__image lazy-image" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/services/serviceGrid_image_01.jpg" alt="Services Image">
 							</div>
 						</div>
 					</div>
-
-					<div class="button seo-text__toggle">Развернуть</div>
+		
+					<!-- two -->
+					<div class="row servicesGrid__two" id="for_key">
+						<div class="col-lg-5 offset-lg-1">
+							<div class="services-txtBlock__image-box servicesGrid__image_two">
+								<div class="" >
+								<img class="services-txtBlock__image lazy-image" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/services/serviceGrid_image_02.jpg" alt="Services Image">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="services-txtBlock services-txtBlock_orange">
+								<div class="services-txtBlock__icon-box">
+									<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/building.svg" class="lazy-image" alt="Services txt Block Icon">
+								</div>
+								<h3 class="services-txtBlock__title">Продажа апартаментов под ключ</h3>
+								<div class="services-txtBlock__content">
+									<p>Компания Yenisey, проявляя заботу о покупателях и понимая их потребности, предлагает полностью готовые просторные квартиры, где с любовью продумана каждая деталь интерьера, установлена высококачественная техника, мебель, декор, чтобы Вы могли получать удовольствие от уютного проживания сразу после покупки. Если Вы приобретаете квартиру уже с мебелью и техникой, оформление документов входит в стоимость апартаментов.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- three -->
+					<div class="row servicesGrid__three" id="free_service">
+						<div class="col-lg-5 offset-lg-2">
+							<div class="services-txtBlock services-txtBlock_blue">
+								<div class="services-txtBlock__icon-box">
+									<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/group.svg" class="lazy-image" alt="Services txt Block Icon">
+								</div>
+								<h3 class="services-txtBlock__title">Бесплатный пост-продажный сервис</h3>
+								<div class="services-txtBlock__content">
+									<p>Современные жилые комплексы Yenisey - это оазисы яркого жизненного пространства, где есть всё необходимое и даже больше.</p>
+									<p>Тем не менее, мы понимаем, что нашим владельцам требуется помощь на этапе обустройства и после переезда в решении возникающих бытовых вопросов, будь то уборка, присмотр за жильём, подключение счетчиков или покупка мебели в магазинах Алании.</p>
+									<p>Наш Департамент по обслуживанию клиентов оказывает всестороннюю поддержку всем жильцам на бесплатной и бессрочной основе.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- four -->
+					<div class="row servicesGrid__four" id="management">
+						<div class="col-lg-5 offset-lg-1">
+							<div class="services-txtBlock__image-box servicesGrid__image_four " >
+								<img class="services-txtBlock__image lazy-image" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/services/serviceGrid_image_03.jpg" alt="Services Image">
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="services-txtBlock services-txtBlock_orange">
+								<div class="services-txtBlock__icon-box ">
+									<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/Frame.svg" class="lazy-image" alt="Services txt Block Icon">
+								</div>
+								<h3 class="services-txtBlock__title">Менеджмент и обслуживание комплексов</h3>
+								<div class="services-txtBlock__content">
+									<p>Выбрав проживание в новых домах от Yenisey, Вы получаете массу преимуществ: продуманная планировка и дизайн, комфортная атмосфера, ухоженная территория, ландшафтное озеленение, развитая инфраструктура, широкий спектр услуг.</p>
+									<p>Всё это составные части общего жилищного механизма, требующие эффективного контроля и управления. Мы организовали собственную профессиональную команду по обслуживанию наших жилых комплексов, которая поддерживает в надлежащем порядке придомовую территорию и объекты общественного пользования. Вам же остается только наслаждаться отдыхом и жизнью в Турции!</p>
+									<p>Если наши клиенты желают использовать свои апартаменты под арендный бизнес, мы также готовы им в этом помочь.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- five -->
+					<div class="row servicesGrid__five" id="mortgage">
+						<div class="order-1 order-lg-0 col-lg-5 offset-lg-1">
+							<div class="services-txtBlock services-txtBlock_blue">
+								<div class="services-txtBlock__icon-box">
+									<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/money.svg" class="lazy-image" alt="Services txt Block Icon">
+								</div>
+								<h3 class="services-txtBlock__title">Ипотека в Турции</h3>
+								<div class="services-txtBlock__content">
+									<p>Жить на побережье Средиземного моря – заветная мечта для многих иностранных граждан. И она может осуществиться даже для тех, кто не имеет на руках всей суммы, необходимой для покупки собственности. Речь идет об ипотеке на недвижимость в Турции, которая позволит в короткие сроки получить недостающие средства для оплаты новой квартиры.</p>
+									<p>Строительная компания Yenisey всячески поддерживает и помогает своим клиентам в выборе банка и оформлении ипотечного кредита.</p>
+								</div>
+							</div>
+						</div>
+						<div class="order-0 order-lg-1 col-lg-4 offset-lg-1">
+							<div class="services-txtBlock__image-box servicesGrid__image_five">
+								<div class="" >
+									<img class="services-txtBlock__image lazy-image" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/services/serviceGrid_image_04.jpg" alt="Services Image">
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- Six -->
+					<div class="row servicesGrid__six" id="real_estate_exchange">
+						<div class="col-lg-5 offset-lg-1">
+							<div class="services-txtBlock services-txtBlock_orange">
+								<div class="services-txtBlock__icon-box ">
+									<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/frame_01.svg" class="lazy-image" alt="Services txt Block Icon">
+								</div>
+								<h3 class="services-txtBlock__title">Обмен недвижимости</h3>
+								<div class="services-txtBlock__content">
+									<p>Вы уже собственник квартиры в одном из комплексов Yenisey и желаете увеличить жилую площадь?</p>
+									<p>Строительный холдинг Yenisey предоставляет возможность обменять имеющуюся у Вас недвижимость в нашем комплексе на новую, также в комплексе Yenisey. Для этого наши квалифицированные сотрудники проведут осмотр, составят оценку Вашей собственности и рассчитают стоимость необходимой доплаты за новую квартиру.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- seven -->
+					<div class="row servicesGrid__seven" >
+						<div class="col-lg-5 offset-lg-6">
+							<div class="services-txtBlock services-txtBlock_blue">
+								<div class="services-txtBlock__icon-box">
+									<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/mortgage.svg" class="lazy-image" alt="Services txt Block Icon">
+								</div>
+								<h3 class="services-txtBlock__title">Беспроцентная рассрочка</h3>
+								<div class="services-txtBlock__content">
+									<p>Среди многих преимуществ покупки жилья напрямую от строительной компании часто решающим фактором является предоставление беспроцентной рассрочки. В данном случае нет никаких начисляемых процентов от банка или агентства. Покупатель оплачивает лишь стоимость квартиры по первоначальной цене непосредственно от девелопера, то есть от нас – строительной компании Yenisey.</p>
+									<p>Мы всегда идем на встречу нашим клиентам и стараемся, чтобы система оплат была для них комфортной и необременительной!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- eight -->
+					<div class="row servicesGrid__eight" id="help">
+						<div class="order-1 order-lg-0 col-lg-5 offset-lg-1">
+							<div class="services-txtBlock services-txtBlock_orange">
+								<div class="services-txtBlock__icon-box">
+									<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/exam_2.svg" class="lazy-image" alt="Services txt Block Icon">
+								</div>
+								<h3 class="services-txtBlock__title">Помощь в оформлении ВНЖ</h3>
+								<div class="services-txtBlock__content">
+									<p>Покупка квартиры в Турции – важный и долгожданный шаг. Многие иностранные граждане уже стали полноправными владельцами комфортабельных апартаментов на средиземноморском побережье. Правительство государства всячески поощряет собственников из-за рубежа и предлагает простой способ получения вида на жительство в качестве бонуса за инвестиции в недвижимость. Наша компания готова оказать всестороннюю поддержку новым участникам семьи Yenisey, проконсультировать и помочь с оформлением ВНЖ.</p>
+								</div>
+							</div>
+						</div>
+						<div class="order-0 order-lg-1 col-lg-4 offset-lg-1">
+							<div class="services-txtBlock__image-box servicesGrid__image_eight " >
+								<img class="services-txtBlock__image lazy-image" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/services/serviceGrid_image_05.jpg" alt="Services Image">
+							</div>
+						</div>
+					</div>
+		
+					<!-- nine -->
+					<div class="row servicesGrid__nine" id="airport">
+						<div class="col-lg-5 offset-lg-1">
+							<div class="services-txtBlock__image-box servicesGrid__image_nine " >
+								<img class="services-txtBlock__image lazy-image" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/services/serviceGrid_image_06.jpg" alt="Services Image">
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="services-txtBlock services-txtBlock_blue">
+								<div class="services-txtBlock__icon-box ">
+									<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/icons/services/taxi.svg" class="lazy-image" alt="Services txt Block Icon">
+								</div>
+								<h3 class="services-txtBlock__title">Трансфер в аэропорт</h3>
+								<div class="services-txtBlock__content">
+									<p>Компания Yenisey с радостью поможет потенциальным покупателям и собственникам жилья в наших ЖК организовать трансфер из/в аэропорт Анталии или Газипаши.</p>
+									<p>Для этого Вам нужно будет всего лишь сообщить дату прилёта и номер рейса. Наши сотрудники позаботятся о том, чтобы комфортабельный автомобиль был подан в аэропорт вовремя.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<div class="row">
+						<div class="col-12">
+							<button class="button services-txtBlocks__button"
+							data-fancybox data-src="#openModalMainForm" data-modal="true"
+							data-popup-title="Перезвоните мне">Перезвоните мне</button>
+						</div>
+					</div>
+		
 				</div>
-
-				<div class="property__bg-image">
-					<picture class="lazy-source">
-						<source type="image/webp" data-srcset="assets/images/theme/home/seo-text-bg.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
-						<img data-srcset="assets/images/theme/home/seo-text-bg.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Property BG">
-					</picture>
-				</div>
-
 			</section>
-
 		</main>
 
 		<footer class="footer">
@@ -1493,6 +866,26 @@
 		</footer>
 
 		<div class="popup-block">
+
+			<div class="video-popup__wrap" id="openModalVideo">
+				<div class="video-popup">
+					<div class="video-popup__content">
+						<div class="video-popup__responsive-box"></div>
+		
+						<button class="popup__close-btn video-popup__close-btn" data-fancybox-close>
+							<svg class="popup__close-icon" width="28" height="28" viewBox="0 0 28 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M23.899 4.10101C21.2534 1.45539 17.7416 0 14 0C10.2584 0 6.74663 1.45539 4.10101 4.10101C1.45539 6.74663 0 10.2584 0 14C0 17.7416 1.45539 21.2534 4.10101 23.899C6.74663 26.5446 10.2584 28 14 28C17.7416 28 21.2534 26.5446 23.899 23.899C26.5446 21.2534 28 17.7416 28 14C28 10.2584 26.5446 6.74663 23.899 4.10101ZM22.7736 22.7736C20.4285 25.1187 17.3114 26.4091 14 26.4091C10.6886 26.4091 7.57155 25.1187 5.22643 22.7736C0.388889 17.936 0.388889 10.064 5.22643 5.22643C7.57155 2.88131 10.6886 1.59091 14 1.59091C17.3114 1.59091 20.4285 2.88131 22.7736 5.22643C27.6111 10.064 27.6111 17.936 22.7736 22.7736Z"
+									fill="#174682" />
+								<path
+									d="M20.1693 7.83081C19.857 7.51852 19.3562 7.51852 19.0439 7.83081L14.0001 12.8746L8.95632 7.83081C8.64403 7.51852 8.14319 7.51852 7.8309 7.83081C7.51861 8.14309 7.51861 8.64394 7.8309 8.95623L12.8747 14L7.8309 19.0438C7.51861 19.3561 7.51861 19.8569 7.8309 20.1692C7.9841 20.3224 8.19033 20.4049 8.39066 20.4049C8.591 20.4049 8.79723 20.3283 8.95043 20.1692L13.9942 15.1254L19.038 20.1692C19.1912 20.3224 19.3974 20.4049 19.5977 20.4049C19.804 20.4049 20.0043 20.3283 20.1575 20.1692C20.4698 19.8569 20.4698 19.3561 20.1575 19.0438L15.1255 14L20.1693 8.95623C20.4816 8.64394 20.4816 8.14309 20.1693 7.83081Z"
+									fill="#174682" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
 		
 			<div class="page__popup popup mail_form" id="openModalMainForm">
 				<header class="popup__header">
@@ -1705,36 +1098,37 @@
 	<!--== CSS @print -->
 	<!-- <link rel="stylesheet" href="assets/css/print.css" /> -->
 
+	<!--== Google Map  -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnmv8rDSzIL4RVE5EBt6Kt4hqdFXU2mA4" async defer></script>
+
 	<link rel="stylesheet" href="assets/mix/vendor/stylesPlugins.min.css" />
 	<link rel="stylesheet" href="assets/mix/styles.min.css" />
 
 
 	<script src="assets/vendor/js/jquery.min.js"></script>
-	<!-- <script src="assets/js/intersectionObserver.min.js" async defer></script> -->
+	<!-- <script src="assets/js/intersectionObserver.min.js" async defer></script>
 
 
+	<script src="assets/js/intersectionObserver.js"></script>
+	<script src="assets/vendor/js/nice-select.min.js"></script>
+	<script src="assets/vendor/js/swiper.min.js"></script>
+	<script src="assets/vendor/js/validate.min.js"></script>
+	<script src="assets/vendor/js/messages_ru.js"></script>
+	<script src="assets/vendor/js/localization/messages_ru.min.js"></script>
+	<script src="assets/vendor/js/js.cookie.min.js"></script>
+	<script src="assets/vendor/js/jquery.cookie.js"></script>
+	<script src="assets/vendor/js/jsmartable.min.js"></script>
+	<script src="assets/vendor/js/fancybox.min.js"></script>
+	<script src="assets/vendor/js/imask.js"></script>
+	<script src="assets/vendor/js/intlTelInput.js"></script>
+	<script src="assets/vendor/js/SmoothScroll.min.js"></script>
 
-	<!-- <script src="assets/js/intersectionObserver.js"></script>
-		<script src="assets/vendor/js/nice-select.min.js"></script>
-		<script src="assets/vendor/js/swiper.min.js"></script>
-		<script src="assets/vendor/js/validate.min.js"></script>
-		<script src="assets/vendor/js/localization/messages_ru.min.js"></script>
-		<script src="assets/vendor/js/js.cookie.min.js"></script>
-		<script src="assets/vendor/js/jquery.cookie.js"></script>
-		<script src="assets/vendor/js/jsmartable.min.js"></script>
-		<script src="assets/vendor/js/fancybox.min.js"></script>
-		<script src="assets/vendor/js/imask.js"></script>
-		<script src="assets/vendor/js/intlTelInput.js"></script>
-		<script src="assets/vendor/js/SmoothScroll.min.js"></script>
+
+	<script src="assets/js/common.js"></script>
+	<script src="assets/js/mobile.js"></script> -->
 	
-	
-		<script src="assets/js/common.js"></script>
-		<script src="assets/js/mobile.js"></script>
-	
-		{{-- <script src="assets/js/script.min.js"></script> --}}
-		 <script src="/back/favorites.js"></script>
-		 <script src="/back/mail.js"></script>
-		{{-- <script src="/back/google_yandex.js"></script> --}} -->
+		 <!-- <script src="/back/favorites.js"></script>
+		 <script src="/back/mail.js"></script> -->
 	<script src="assets/mix/vendor/scripts.min.js"></script>
 	<script src="assets/mix/scripts.min.js"></script>
 
