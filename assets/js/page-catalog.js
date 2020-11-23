@@ -82,8 +82,6 @@ const seoTextToggle = () => {
 		$(".article__toggle").hide();
 	}
 
-	console.log(block.children().length);
-
 
 	if(!block.hasClass('_hide')){
 		block.removeClass('_show').addClass('_hide');
